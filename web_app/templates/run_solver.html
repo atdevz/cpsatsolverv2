@@ -38,12 +38,16 @@ document.addEventListener('DOMContentLoaded', function() {
             runSolverBtn.disabled = false;
             eventSource.close();
         };
+        
+        // Handle successful completion of the stream
+        eventSource.onopen = function() {
+            console.log("EventSource connected.");
+        };
 
-        // Optional: Listen for a specific 'end' event from the server if you want more control
-        // eventSource.addEventListener('end', function(event) {
-        //     runSolverBtn.disabled = false;
-        //     eventSource.close();
-        // });
+        eventSource.onclose = function() {
+            console.log("EventSource disconnected.");
+            runSolverBtn.disabled = false; // Re-enable button on stream close
+        };
     });
 });
 </script>

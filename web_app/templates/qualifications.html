@@ -46,8 +46,8 @@
                         <input type="text" class="form-control" id="employeeName" required>
                     </div>
                     <div class="form-group">
-                        <label for="employeeQualifications">Qualifications (comma-separated)</label>
-                        <input type="text" class="form-control" id="employeeQualifications">
+                        <label for="employeeFonctions">Functions (comma-separated)</label>
+                        <input type="text" class="form-control" id="employeeFonctions">
                     </div>
                     <div class="form-group">
                         <label for="employeeConstraints">Constraints (JSON format)</label>
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
             row.innerHTML = `
                 <td>${emp.id}</td>
                 <td>${emp.name}</td>
-                <td>${Array.isArray(emp.qualifications) ? emp.qualifications.filter(q => typeof q === 'string').join(', ') : ''}</td>
+                <td>${Array.isArray(emp.fonctions) ? emp.fonctions.filter(f => typeof f === 'string').join(', ') : ''}</td>
                 <td>
                     <button class="btn btn-info btn-sm edit-btn" data-index="${index}">Edit</button>
                     <button class="btn btn-danger btn-sm delete-btn" data-id="${emp.id}">Delete</button>
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('employeeId').value = emp.id;
             document.getElementById('employeeId').readOnly = true;
             document.getElementById('employeeName').value = emp.name;
-            document.getElementById('employeeQualifications').value = Array.isArray(emp.qualifications) ? emp.qualifications.filter(q => typeof q === 'string').join(', ') : '';
+            document.getElementById('employeeFonctions').value = Array.isArray(emp.fonctions) ? emp.fonctions.filter(f => typeof f === 'string').join(', ') : '';
             document.getElementById('employeeConstraints').value = JSON.stringify(emp.constraints || [], null, 2);
             
             modalLabel.textContent = 'Edit Employee';
@@ -134,15 +134,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const index = document.getElementById('employeeIndex').value;
         const id = document.getElementById('employeeId').value.trim();
         const name = document.getElementById('employeeName').value.trim();
-        const qualificationsStr = document.getElementById('employeeQualifications').value.trim();
-        const constraintsStr = document.getElementById('employeeConstraints').value.trim();
+        const fonctionsStr = document.getElementById('employeeFonctions').value.trim();
 
         if (!id || !name) {
             alert('ID and Name are required.');
             return;
         }
 
-        let qualifications = qualificationsStr ? qualificationsStr.split(',').map(q => q.trim()) : [];
+        let fonctions = fonctionsStr ? fonctionsStr.split(',').map(f => f.trim()) : [];
         let constraints = [];
         try {
             constraints = constraintsStr ? JSON.parse(constraintsStr) : [];
@@ -151,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        const newEmp = { id, name, qualifications, constraints };
+        const newEmp = { id, name, fonctions, constraints };
 
         if (index === "-1") { // Add new
             if (employeesData.some(e => e.id === id)) {

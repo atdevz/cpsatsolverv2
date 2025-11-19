@@ -33,7 +33,19 @@ def get_employees():
     return load_json_file(EMPLOYEES_FILE)
 
 def save_employees(employees_data):
-    save_json_file(EMPLOYEES_FILE, employees_data)
+    # Transformer les données pour que 'fonctions' soit stocké comme 'qualifications'
+    # pour la compatibilité avec data_loader.py
+    transformed_employees_data = []
+    for emp in employees_data:
+        transformed_emp = emp.copy()
+        if "fonctions" in transformed_emp:
+            # Copier la liste des fonctions sous la clé 'qualifications'
+            transformed_emp["qualifications"] = transformed_emp["fonctions"]
+            # Supprimer la clé 'fonctions' si elle ne doit pas être persistée séparément
+            del transformed_emp["fonctions"]
+        transformed_employees_data.append(transformed_emp)
+    
+    save_json_file(EMPLOYEES_FILE, transformed_employees_data)
 
 def get_fonctions():
     return load_json_file(FONCTIONS_FILE)

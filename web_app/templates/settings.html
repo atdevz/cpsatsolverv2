@@ -18,16 +18,6 @@
                         <label for="solver_time_limit_seconds" class="form-label">Solver Time Limit (seconds)</label>
                         <input type="number" class="form-control" id="solver_time_limit_seconds" name="solver_time_limit_seconds">
                     </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="max_refinement_iterations" class="form-label">Max Refinement Iterations</label>
-                        <input type="number" class="form-control" id="max_refinement_iterations" name="max_refinement_iterations">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="min_improvement_threshold" class="form-label">Min Improvement Threshold</label>
-                        <input type="number" step="0.001" class="form-control" id="min_improvement_threshold" name="min_improvement_threshold">
-                    </div>
                 </div>
             </div>
         </div>
@@ -61,15 +51,7 @@
             </div>
         </div>
         
-        <!-- Group Overrides -->
-        <div class="card mb-4">
-            <div class="card-header">
-                <h4>Group Overrides</h4>
-            </div>
-            <div class="card-body" id="group-min-off-days-container">
-                <!-- Dynamic content will be inserted here -->
-            </div>
-        </div>
+
 
 
         <!-- Penalties -->
@@ -93,7 +75,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('settings-form');
     const penaltiesContainer = document.getElementById('penalties-container');
-    const groupMinOffDaysContainer = document.getElementById('group-min-off-days-container');
 
     // Fetch and populate the form
     fetch('/api/settings')
@@ -109,20 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
             
-            // Populate group_min_off_days
-            if (data.group_min_off_days) {
-                let groupHtml = '<div class="row">';
-                for (const groupName in data.group_min_off_days) {
-                    groupHtml += `
-                        <div class="col-md-6 mb-3">
-                            <label for="group_min_off_days_${groupName}" class="form-label">Min OFF Days for ${groupName}</label>
-                            <input type="number" class="form-control" id="group_min_off_days_${groupName}" name="group_min_off_days.${groupName}" value="${data.group_min_off_days[groupName]}">
-                        </div>
-                    `;
-                }
-                groupHtml += '</div>';
-                groupMinOffDaysContainer.innerHTML = groupHtml;
-            }
+
 
             // Populate penalties
             if (data.penalties) {
@@ -148,13 +116,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Reconstruct the nested structure
         data.penalties = {};
-        data.group_min_off_days = {};
 
         for (const [key, value] of formData.entries()) {
             if (key.startsWith('penalties.')) {
                 data.penalties[key.substring(10)] = Number(value);
-            } else if (key.startsWith('group_min_off_days.')) {
-                data.group_min_off_days[key.substring(21)] = Number(value);
             } else {
                 data[key] = isNaN(Number(value)) ? value : Number(value);
             }

@@ -26,44 +26,44 @@ OUTPUT_CSV_PATH = os.path.join(BASE_DIR, "data/output/Planning.csv")
 OUTPUT_REPORT_PATH = os.path.join(BASE_DIR, "data/output/Report.txt")
 
 def run():
-    print("--- [1/6] Démarrage du Planificateur ---")
+    print("--- [1/6] Démarrage du Planificateur ---", flush=True)
     
     # 1. Chargement
     loader = DataLoader(CONFIG_PATH, EMPLOYEES_PATH, FONCTIONS_PATH, SHIFTS_PATH, NEEDS_PATH, GROUPS_PATH)
     all_data = loader.load_all_data()
     
-    print("\n--- [2/6] Vérification des Données ---")
+    print("\n--- [2/6] Vérification des Données ---", flush=True)
     if not all_data.get('daily_needs'):
-        print("ERREUR: Données manquantes (daily_needs vide).")
+        print("ERREUR: Données manquantes (daily_needs vide).", flush=True)
         sys.exit()
-    print("  SUCCÈS: Données OK.")
+    print("  SUCCÈS: Données OK.", flush=True)
 
-    print("\n--- [3/6] Analyse des familles et besoins ---")
-    print(f"  {len(all_data['employee_families'])} familles d'employés chargées.")
+    print("\n--- [3/6] Analyse des familles et besoins ---", flush=True)
+    print(f"  {len(all_data['employee_families'])} familles d'employés chargées.", flush=True)
     
     # Calcul des besoins totaux pour info
     total_needs_per_shift = defaultdict(int)
     for need in all_data["daily_needs"]:
         total_needs_per_shift[need.shift_id] += need.count
     all_data["total_needs_per_shift"] = total_needs_per_shift
-    print(f"  Volume total de shifts demandés : {sum(total_needs_per_shift.values())}")
+    print(f"  Volume total de shifts demandés : {sum(total_needs_per_shift.values())}", flush=True)
 
     # Ajout manuel de la map des fonctions (nécessaire pour le Solver)
     all_data["fonctions_map"] = loader._load_fonctions()
     
-    print("\n--- [4/6] Pré-calcul des contraintes ---")
+    print("\n--- [4/6] Pré-calcul des contraintes ---", flush=True)
     # Calcul des 11h de repos et des weekends
     toxic_pairs = utils.calculate_toxic_pairs(all_data["shifts_map"], all_data["config"]["min_rest_hours"])
     all_data["weekends"] = utils.get_weekends_in_range(all_data["date_range"])
 
-    print("\n--- [5/6] Lancement du Solveur (CpSatSolver) ---")
+    print("\n--- [5/6] Lancement du Solveur (CpSatSolver) ---", flush=True)
     solver = CpSatSolver(all_data, toxic_pairs)
     solver.create_model() # Construit le modèle
     
     # Résolution unique (plus de refiner)
     planning, report_data = solver.solve()
 
-    print("\n--- [6/6] Sauvegarde des résultats ---")
+    print("\n--- [6/6] Sauvegarde des résultats ---", flush=True)
     if planning:
         try:
             # 1. Sauvegarde du CSV (Planning.csv)
@@ -71,19 +71,19 @@ def run():
             # Tri des colonnes par date
             df = df[sorted(df.columns)] 
             df.to_csv(OUTPUT_CSV_PATH, index_label="Employee")
-            print(f"  >> Planning sauvegardé : {OUTPUT_CSV_PATH}")
+            print(f"  >> Planning sauvegardé : {OUTPUT_CSV_PATH}", flush=True)
             
             # 2. Sauvegarde du Rapport (Report.txt)
             if report_data:
                 report_text = reporter.generate_text_report(report_data, planning)
                 with open(OUTPUT_REPORT_PATH, 'w', encoding='utf-8') as f:
                     f.write(report_text)
-                print(f"  >> Rapport sauvegardé  : {OUTPUT_REPORT_PATH}")
+                print(f"  >> Rapport sauvegardé  : {OUTPUT_REPORT_PATH}", flush=True)
                 
         except Exception as e:
-            print(f"ERREUR CRITIQUE lors de la sauvegarde : {e}")
+            print(f"ERREUR CRITIQUE lors de la sauvegarde : {e}", flush=True)
     else:
-        print("\n[FIN] Aucune solution trouvée. Vérifiez vos contraintes.")
+        print("\n[FIN] Aucune solution trouvée. Vérifiez vos contraintes.", flush=True)
 
 if __name__ == "__main__":
     # Création du dossier output s'il n'existe pas

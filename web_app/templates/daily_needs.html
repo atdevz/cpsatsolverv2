@@ -223,11 +223,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        // Convert YYYY-MM-DD back to D/M/YY for saving
-        const dateParts = dateInput.split('-');
-        const saveDateString = `${parseInt(dateParts[2])}/${parseInt(dateParts[1])}/${dateParts[0].substring(2)}`;
-
-        const newNeed = { date_str: saveDateString, shift_id, count };
+        const newNeed = { date_str: dateInput, shift_id, count }; // Keep YYYY-MM-DD format
 
         if (index === "-1") { // Add new
             if (originalNeedsData.some(n => n.date_str === saveDateString && n.shift_id === shift_id)) {

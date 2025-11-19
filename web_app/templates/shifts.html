@@ -54,10 +54,7 @@
                         <label for="endTime">End Time</label>
                         <input type="time" class="form-control" id="endTime" required>
                     </div>
-                    <div class="form-group">
-                        <label for="durationMinutes">Duration (Minutes)</label>
-                        <input type="number" class="form-control" id="durationMinutes" required>
-                    </div>
+
                 </form>
             </div>
             <div class="modal-footer">
@@ -143,14 +140,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const name = document.getElementById('shiftName').value.trim();
         const start_time = document.getElementById('startTime').value;
         const end_time = document.getElementById('endTime').value;
-        const duration_minutes = parseInt(document.getElementById('durationMinutes').value);
+        const duration_minutes = null;
 
-        if (!id || !name || !start_time || !end_time || isNaN(duration_minutes)) {
-            alert('All fields are required.');
+        if (!id || !name || !start_time || !end_time) {
+            alert('Shift ID, Name, Start Time, and End Time are required.');
             return;
         }
 
-        shiftsData[id] = { id, name, start_time, end_time, duration_minutes };
+        shiftsData[id] = { id, name, start_time, end_time };
         saveShifts();
     });
 

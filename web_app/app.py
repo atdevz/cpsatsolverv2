@@ -1,6 +1,6 @@
 from flask import Flask, render_template, jsonify, request, redirect, url_for, flash, Response
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
-from . import data_manager
+import data_manager
 import os
 import pandas as pd
 import subprocess
@@ -125,23 +125,43 @@ def run_solver_page():
 @app.route('/api/run_solver', methods=['GET'])
 @login_required
 def api_run_solver():
+    print("API /api/run_solver called.", flush=True)
     def generate():
+        print("Generator function 'generate' entered.", flush=True)
         main_script_path = os.path.join(app.root_path, os.pardir, 'main.py')
-        process = subprocess.Popen(['python', main_script_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, bufsize=1)
+        try:
+            print(f"Attempting to run solver script: {main_script_path}", flush=True)
+            # Use encoding directly instead of text=True for explicit control and remove bufsize
+            process = subprocess.Popen(['python', main_script_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE, encoding='latin-1')
+            print("subprocess.Popen successful.", flush=True)
 
-        # Stream stdout
-        for line in iter(process.stdout.readline, ''):
-            yield f"data: {line.strip()}\n\n"
+            # Stream stdout
+            for line in iter(process.stdout.readline, ''):
+                print(f"Stdout: {line.strip()}", flush=True)
+                yield f"data: {line.strip()}\n\n"
 
-        # Stream stderr (if any, after stdout is exhausted)
-        for line in iter(process.stderr.readline, ''):
-            yield f"data: {line.strip()}\n\n"
+            # Stream stderr (if any, after stdout is exhausted or if stdout is empty)
+            stderr_output = []
+            for line in iter(process.stderr.readline, ''):
+                print(f"Stderr: {line.strip()}", flush=True)
+                stderr_output.append(line.strip())
+                yield f"data: {line.strip()}\n\n"
 
-        process.wait()
-        if process.returncode != 0:
-            yield f"data: \nERROR: Solver script exited with code {process.returncode}\n\n"
-        else:
-            yield f"data: \nSolver script finished successfully.\n\n"
+            process.wait() # Wait for the process to terminate
+
+            if process.returncode != 0:
+                error_message = f"ERROR: Le script du solveur s'est terminé avec le code {process.returncode}."
+                if stderr_output:
+                    error_message += f" Messages d'erreur: {' '.join(stderr_output)}"
+                print(error_message, flush=True) # Log to Flask's console
+                yield f"data: \n{error_message}\n\n"
+            else:
+                print("Le script du solveur a terminé avec succès.", flush=True) # Log to Flask's console
+                yield f"data: \nLe script du solveur a terminé avec succès.\n\n"
+        except Exception as e:
+            error_message = f"ERROR: Une exception s'est produite lors du lancement du solveur : {str(e)}"
+            print(error_message, flush=True) # Log to Flask's console
+            yield f"data: \n{error_message}\n\n"
 
     return Response(generate(), mimetype='text/event-stream')
 
@@ -224,22 +244,84 @@ def upload_excel():
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         file.save(filepath)
         
-        # Placeholder for Excel processing logic
+        # Actual Excel processing logic
         try:
-            # Example: Read an Excel file and print its sheets
             xls = pd.ExcelFile(filepath)
-            sheet_names = xls.sheet_names
-            print(f"Uploaded Excel file '{file.filename}' with sheets: {sheet_names}")
-            
-            # Here you would add logic to parse the Excel file
-            # and update your JSON data using data_manager functions.
-            # For example:
-            # df_employees = pd.read_excel(filepath, sheet_name='Employees')
-            # employees_data = df_employees.to_dict(orient='records')
-            # data_manager.save_employees(employees_data)
+            messages = []
 
-            return jsonify({"message": f"File '{file.filename}' uploaded and processed successfully. Sheets found: {sheet_names}"})
+            # Process Employees
+            if 'Employees' in xls.sheet_names:
+                df_employees = pd.read_excel(filepath, sheet_name='Employees')
+                employees_data = df_employees.to_dict(orient='records')
+                # Ensure 'fonctions' is treated as a list of strings
+                for emp in employees_data:
+                    if 'fonctions' in emp and isinstance(emp['fonctions'], str):
+                        emp['fonctions'] = [f.strip() for f in emp['fonctions'].split(',') if f.strip()]
+                    else:
+                        emp['fonctions'] = []
+                    if 'constraints' in emp and isinstance(emp['constraints'], str):
+                        try:
+                            emp['constraints'] = json.loads(emp['constraints'])
+                        except json.JSONDecodeError:
+                            print(f"WARNING: Could not parse constraints for employee {emp.get('id', '')}: {emp['constraints']}")
+                            emp['constraints'] = []
+                    else:
+                        emp['constraints'] = []
+
+                data_manager.save_employees(employees_data)
+                messages.append('Employees data updated from Excel.')
+
+            # Process Functions
+            if 'Functions' in xls.sheet_names:
+                df_functions = pd.read_excel(filepath, sheet_name='Functions')
+                functions_data = {"functions": df_functions.to_dict(orient='records')}
+                # Ensure 'qualifications' are lists of strings
+                for func in functions_data['functions']:
+                    if 'qualifications' in func and isinstance(func['qualifications'], str):
+                        func['qualifications'] = [q.strip() for q in func['qualifications'].split(',') if q.strip()]
+                    else:
+                        func['qualifications'] = []
+                data_manager.save_fonctions(functions_data)
+                messages.append('Functions data updated from Excel.')
+            
+            # Process Shifts Master
+            if 'Shifts' in xls.sheet_names:
+                df_shifts = pd.read_excel(filepath, sheet_name='Shifts')
+                shifts_data = {row['id']: row.to_dict() for index, row in df_shifts.iterrows()}
+                data_manager.save_shifts_master(shifts_data)
+                messages.append('Shifts master data updated from Excel.')
+
+            # Process Daily Needs
+            if 'Daily Needs' in xls.sheet_names:
+                df_daily_needs = pd.read_excel(filepath, sheet_name='Daily Needs')
+                daily_needs_data = df_daily_needs.to_dict(orient='records')
+                data_manager.save_daily_needs(daily_needs_data)
+                messages.append('Daily needs data updated from Excel.')
+
+            # Process Groups
+            if 'Groups' in xls.sheet_names:
+                df_groups = pd.read_excel(filepath, sheet_name='Groups')
+                # Assuming Groups sheet has columns like 'Group Name' and 'Employee ID'
+                # And we need to aggregate employee IDs per group
+                groups_dict = {}
+                for index, row in df_groups.iterrows():
+                    group_name = str(row['group_name']).strip() # Assuming 'group_name' column
+                    employee_id = str(row['employee_id']).strip() # Assuming 'employee_id' column
+                    if group_name not in groups_dict:
+                        groups_dict[group_name] = []
+                    if employee_id: # Only add if employee_id is not empty
+                        groups_dict[group_name].append(employee_id)
+                data_manager.save_groups(groups_dict)
+                messages.append('Groups data updated from Excel.')
+
+            os.remove(filepath) # Clean up the uploaded file
+
+            if not messages:
+                messages.append("No recognized sheets (Employees, Functions, Shifts, Daily Needs, Groups) found or processed in the Excel file.")
+            
+            return jsonify({"message": " ".join(messages)}), 200
         except Exception as e:
+            print(f"Error during Excel processing: {e}")
             return jsonify({"error": f"Error processing Excel file: {str(e)}"}), 500
 
 if __name__ == '__main__':
