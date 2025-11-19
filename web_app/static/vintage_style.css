@@ -1,0 +1,262 @@
+/* General Body and Typography */
+body {
+    font-family: "MS Sans Serif", "Arial", sans-serif; /* Attempt to mimic old Windows font */
+    background-color: #C0C0C0; /* Classic Windows grey */
+    color: #000000; /* Black text */
+    padding-top: 40px; /* Adjust for compact navbar */
+    font-size: 12px; /* Smaller, more compact text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "MS Sans Serif", "Arial", sans-serif;
+    color: #000000;
+    margin-top: 5px; /* Compact headings */
+    margin-bottom: 5px;
+}
+
+/* Containers and Panels */
+.container {
+    background-color: #FFFFFF; /* White content area */
+    border: 2px solid #808080; /* Dark grey border */
+    padding: 10px; /* Compact padding */
+    box-shadow: none; /* Remove modern shadows */
+    margin-top: 10px; /* Space from navbar */
+    margin-bottom: 10px;
+}
+
+.card {
+    border: 2px solid #808080; /* Vintage card border */
+    background-color: #C0C0C0; /* Card background */
+    margin-bottom: 5px; /* Compact cards */
+}
+
+.card-header {
+    background-color: #000080; /* Dark blue title bar */
+    color: #FFFFFF; /* White text */
+    padding: 3px 5px; /* Compact header */
+    border-bottom: 1px solid #808080;
+    font-weight: bold;
+}
+
+.card-header button {
+    color: #FFFFFF; /* White text for button in header */
+    text-decoration: none;
+    font-size: 12px;
+    padding: 0;
+}
+
+.card-header button:hover {
+    color: #DDDDDD;
+    text-decoration: underline;
+}
+
+.card-body {
+    background-color: #FFFFFF; /* White body */
+    padding: 5px; /* Compact body */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #C0C0C0 !important; /* Grey navbar */
+    border-bottom: 2px solid #808080;
+    padding: 0 5px; /* Compact navbar */
+    min-height: 30px; /* Smaller navbar height */
+}
+
+.navbar-brand {
+    color: #000000 !important; /* Black brand text */
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.navbar-nav .nav-link {
+    color: #000000 !important; /* Black nav links */
+    padding: 5px 8px; /* Compact nav links */
+    font-size: 12px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #000080; /* Dark blue on hover */
+    color: #FFFFFF !important;
+}
+
+/* Buttons */
+.btn {
+    background-color: #C0C0C0; /* Grey button */
+    color: #000000; /* Black text */
+    border: 2px outset #FFFFFF; /* 3D effect */
+    border-top-color: #FFFFFF;
+    border-left-color: #FFFFFF;
+    border-bottom-color: #808080;
+    border-right-color: #808080;
+    padding: 3px 8px; /* Compact buttons */
+    font-size: 12px;
+    line-height: 1;
+    margin: 2px; /* Small margin for buttons */
+}
+
+.btn:hover {
+    background-color: #B0B0B0; /* Slightly darker grey on hover */
+}
+
+.btn:active {
+    border: 2px inset #FFFFFF; /* Inset effect on click */
+    border-top-color: #808080;
+    border-left-color: #808080;
+    border-bottom-color: #FFFFFF;
+    border-right-color: #FFFFFF;
+}
+
+.btn-primary {
+    background-color: #000080; /* Dark blue primary button */
+    color: #FFFFFF;
+    border: 2px outset #FFFFFF;
+    border-top-color: #FFFFFF;
+    border-left-color: #FFFFFF;
+    border-bottom-color: #000000;
+    border-right-color: #000000;
+}
+
+.btn-primary:hover {
+    background-color: #0000A0;
+}
+
+.btn-primary:active {
+    border: 2px inset #FFFFFF;
+    border-top-color: #000000;
+    border-left-color: #000000;
+    border-bottom-color: #FFFFFF;
+    border-right-color: #FFFFFF;
+}
+
+.btn-info {
+    background-color: #008080; /* Teal for info buttons */
+    color: #FFFFFF;
+    border: 2px outset #FFFFFF;
+    border-top-color: #FFFFFF;
+    border-left-color: #FFFFFF;
+    border-bottom-color: #000000;
+    border-right-color: #000000;
+}
+
+.btn-info:hover {
+    background-color: #00A0A0;
+}
+
+.btn-info:active {
+    border: 2px inset #FFFFFF;
+    border-top-color: #000000;
+    border-left-color: #000000;
+    border-bottom-color: #FFFFFF;
+    border-right-color: #FFFFFF;
+}
+
+.btn-danger {
+    background-color: #800000; /* Maroon for danger buttons */
+    color: #FFFFFF;
+    border: 2px outset #FFFFFF;
+    border-top-color: #FFFFFF;
+    border-left-color: #FFFFFF;
+    border-bottom-color: #000000;
+    border-right-color: #000000;
+}
+
+.btn-danger:hover {
+    background-color: #A00000;
+}
+
+.btn-danger:active {
+    border: 2px inset #FFFFFF;
+    border-top-color: #000000;
+    border-left-color: #000000;
+    border-bottom-color: #FFFFFF;
+    border-right-color: #FFFFFF;
+}
+
+/* Forms */
+.form-control {
+    background-color: #FFFFFF;
+    border: 1px solid #808080; /* Grey border */
+    padding: 3px 5px; /* Compact input */
+    font-size: 12px;
+    height: auto; /* Auto height for compact inputs */
+}
+
+.form-group {
+    margin-bottom: 5px; /* Compact form groups */
+}
+
+label {
+    font-weight: normal; /* Default label weight */
+    font-size: 12px;
+}
+
+/* Tables */
+.table {
+    width: 100%;
+    margin-bottom: 0; /* Compact tables */
+    background-color: #FFFFFF; /* White table background */
+    border: 1px solid #808080;
+}
+
+.table th,
+.table td {
+    padding: 4px; /* Compact cells */
+    vertical-align: top;
+    border-top: 1px solid #DDDDDD;
+    font-size: 12px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F0F0F0; /* Light grey stripe */
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #808080;
+}
+
+/* Flash Messages */
+.flashes {
+    list-style: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #808080;
+    background-color: #E0E0E0;
+    color: #000000;
+    font-size: 12px;
+}
+
+.flashes li {
+    margin-bottom: 2px;
+}
+
+/* Footer */
+.footer {
+    background-color: #C0C0C0; /* Grey footer */
+    border-top: 2px solid #808080;
+    color: #000000;
+    font-size: 12px;
+    line-height: 30px; /* Compact footer */
+    height: 30px; /* Compact footer */
+}
+
+/* Specific for Planning View (Landscape) */
+.table-responsive {
+    overflow-x: auto; /* Enable horizontal scrolling for wide tables */
+    margin-bottom: 10px;
+    border: 2px solid #808080; /* Border around scrollable area */
+    background-color: #FFFFFF;
+}
+
+.planning-table {
+    white-space: nowrap; /* Prevent text wrapping in table cells */
+    min-width: 100%; /* Ensure table takes at least 100% width */
+}
+
+.planning-table th,
+.planning-table td {
+    padding: 4px 8px; /* Slightly more horizontal padding for readability */
+    font-size: 11px; /* Even smaller font for dense planning data */
+}

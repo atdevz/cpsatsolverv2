@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}{{ planning_type }} Planning{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1>{{ planning_type }} Planning</h1>
+    <div class="table-responsive">
+        {{ planning_content | safe }}
+    </div>
+</div>
+{% endblock %}

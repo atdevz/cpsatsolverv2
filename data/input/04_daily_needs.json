@@ -1,0 +1,4827 @@
+[
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "A20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "A30-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "A31-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "C20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "CAR3G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "D20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "N41-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-01",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "CAR3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-02",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "A20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "BR2S-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "C30-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "CAR3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "D10K-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "D20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "Z20D-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "Z20-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "ZG1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "ZR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "INSI",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-03",
+        "shift_id": "HOL",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "CAR3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-04",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "A20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "A30-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "A31-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "C20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "CAR3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "CAR3G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "VAL2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "D20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "N43-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "POSC-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-05",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "BR2G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "C21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "ES3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-06",
+        "shift_id": "ISA3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "BR2G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-07",
+        "shift_id": "ISA3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "A20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "A30-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "A31-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "C20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "CAR3G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "D20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "N41-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-08",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "CAR3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-09",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "A20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "BR2S-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "C30-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "CAR3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "D10K-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "D20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "Z20D-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "Z20-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "ZG1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "ZR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-10",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "CAR3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-11",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "A20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "A30-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "A31-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "C20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "CAR3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "CAR3G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "VAL2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "D20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "N43-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "POSC-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-12",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "A50L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "BR2G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "C21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "ES3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "N40-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "T1B-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "LSD3-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "LSB3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "LSD4-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "LSB4-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-13",
+        "shift_id": "ISA3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "A21-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "A21L-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "A32L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "A50L1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "BR2G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "NLS1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-14",
+        "shift_id": "ISA3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "A20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "A30-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "A31-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "C20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "CAR3G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "D20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "N41-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-15",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "CAR3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-16",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "A20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "BR2S-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "C30-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "CAR3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "D10K-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "D20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "Z20D-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "Z20-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "ZG1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "ZR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-17",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "CAR3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-18",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "A20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "A30-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "A31-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "BR2L-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "C10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "C20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "CAR3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "CAR3G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "VAL2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "D20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "N43-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "POSC-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "Z10LS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "Z10L-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "ZR1L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-19",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "A50L2-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "BR2G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "C21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "ES3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "NLS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "Z10L-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "Z10LS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "ZR1L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "T1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "LSD-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "LSB-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "LSD1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "LSB1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-20",
+        "shift_id": "ISA3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "A50L1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "BR2G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "NLS1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "T2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "LSD2-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "LSB2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-21",
+        "shift_id": "ISA3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "A20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "A30-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "A31-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "C20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "CAR3G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "D20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "N41-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "Z10L-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "Z10LS2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "ZR1L2-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-22",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "CAR3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-23",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "A20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "A30-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "A31-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "C20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "CAR3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "D20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-24",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-25",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "A20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "A30-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "A31-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "BR2L-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "C10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "C20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "D20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "N43-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "Z10LS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "Z10L-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "ZR1L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "BR2G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "C21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "ES3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "NLS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "Z10L-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "Z10LS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "ZR1L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "T1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "LSD-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "LSB-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "LSD1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "LSB1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-27",
+        "shift_id": "ISA3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "A50L1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "BR2G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "NLS1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "Z10L-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "Z10LS2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "ZR1L2-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "T2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "LSD2-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "LSB2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-28",
+        "shift_id": "ISA3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "A20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "A30-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "A31-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "C20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "CAR3G-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "D20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "N41-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "Z10L-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "Z10LS2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "ZR1L2-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-29",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "A21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "A32-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "CAR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "CAR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "CAR3-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "VAL1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "D21-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "POS-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-30",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "A10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "A20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "A30-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "A31-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "A40-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "A50-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "BR1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "BR2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "C10-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "C20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "D10-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "ES1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "ES2-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "D20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "LCI-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "LUA-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "SV-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "Z10L-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "Z20D-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "Z20-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "ZG1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "ZR1-GS",
+        "count": 2
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "G01-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "G02-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "G03-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "G04-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "ISA1-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-31",
+        "shift_id": "ISA2-GS",
+        "count": 1
+    }
+]

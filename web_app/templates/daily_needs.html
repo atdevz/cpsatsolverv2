@@ -1,0 +1,261 @@
+{% extends "base.html" %}
+
+{% block title %}Manage Daily Needs{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Manage Daily Needs</h1>
+        <div>
+            <label for="dateFilter" class="mr-2">Filter by Date:</label>
+            <select id="dateFilter" class="form-control d-inline-block w-auto mr-2"></select>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#needModal" id="addNeedBtn">Add New Need</button>
+        </div>
+    </div>
+
+    <div id="needsContainer" class="mt-3">
+        <!-- Need data will be loaded here as collapsible cards -->
+    </div>
+</div>
+
+<!-- Need Modal -->
+<div class="modal fade" id="needModal" tabindex="-1" role="dialog" aria-labelledby="needModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="needModalLabel">Add Need</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="needForm">
+                    <input type="hidden" id="needIndex" value="-1">
+                    <div class="form-group">
+                        <label for="needDate">Date</label>
+                        <input type="date" class="form-control" id="needDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="shiftId">Shift ID</label>
+                        <input type="text" class="form-control" id="shiftId" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="needCount">Count</label>
+                        <input type="number" class="form-control" id="needCount" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="saveNeedBtn">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const needsContainer = document.getElementById('needsContainer');
+    const modal = $('#needModal');
+    const modalLabel = document.getElementById('needModalLabel');
+    const saveBtn = document.getElementById('saveNeedBtn');
+    const addNeedBtn = document.getElementById('addNeedBtn');
+    const form = document.getElementById('needForm');
+    const dateFilter = document.getElementById('dateFilter');
+    
+    let needsData = [];
+    let originalNeedsData = []; // To store unfiltered data
+
+    async function fetchAndRenderNeeds() {
+        const response = await fetch('/api/daily_needs');
+        originalNeedsData = await response.json();
+        // Sort by date for better readability
+        originalNeedsData.sort((a, b) => new Date(parseDateString(a.date_str)) - new Date(parseDateString(b.date_str)));
+        
+        populateDateFilter();
+        applyFilter();
+    }
+
+    function populateDateFilter() {
+        dateFilter.innerHTML = '<option value="all">Toutes les dates</option>';
+        const uniqueDates = [...new Set(originalNeedsData.map(need => need.date_str))];
+        uniqueDates.sort((a, b) => new Date(parseDateString(a)) - new Date(parseDateString(b)));
+
+        uniqueDates.forEach(dateStr => {
+            const parsedDate = parseDateString(dateStr);
+            const displayDate = new Date(parsedDate).toLocaleDateString('fr-FR', { weekday: 'long', day: '2-digit', month: '2-digit', year: 'numeric' });
+            const option = document.createElement('option');
+            option.value = dateStr;
+            option.textContent = displayDate;
+            dateFilter.appendChild(option);
+        });
+    }
+
+    function applyFilter() {
+        const selectedDate = dateFilter.value;
+        if (selectedDate === 'all') {
+            needsData = [...originalNeedsData];
+        } else {
+            needsData = originalNeedsData.filter(need => need.date_str === selectedDate);
+        }
+        renderTable();
+    }
+
+    dateFilter.addEventListener('change', applyFilter);
+
+    function parseDateString(dateString) {
+        const parts = dateString.split('/');
+        // Assuming D/M/YY format, convert to YYYY-MM-DD
+        const day = parts[0].padStart(2, '0');
+        const month = parts[1].padStart(2, '0');
+        const year = `20${parts[2]}`; // Assuming 2-digit year is in 21st century
+        return `${year}-${month}-${day}`;
+    }
+
+    function renderTable() {
+        needsContainer.innerHTML = '';
+        const groupedNeeds = needsData.reduce((acc, need) => {
+            const date = need.date_str;
+            if (!acc[date]) {
+                acc[date] = [];
+            }
+            acc[date].push(need);
+            return acc;
+        }, {});
+
+        const sortedDates = Object.keys(groupedNeeds).sort((a, b) => {
+            const dateA = new Date(parseDateString(a));
+            const dateB = new Date(parseDateString(b));
+            return dateA - dateB;
+        });
+
+        sortedDates.forEach((dateStr, dateIndex) => {
+            const parsedDate = parseDateString(dateStr);
+            const displayDate = new Date(parsedDate).toLocaleDateString('fr-FR', { weekday: 'long', day: '2-digit', month: '2-digit', year: 'numeric' });
+            const collapseId = `collapseDate-${dateIndex}`;
+
+            const cardHtml = `
+                <div class="card mb-2">
+                    <div class="card-header" id="heading-${dateIndex}">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#${collapseId}" aria-expanded="true" aria-controls="${collapseId}">
+                                <strong>${displayDate}</strong>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="${collapseId}" class="collapse show" aria-labelledby="heading-${dateIndex}" data-parent="#needsContainer">
+                        <div class="card-body p-0">
+                            <table class="table table-sm mb-0">
+                                <tbody>
+                                    ${groupedNeeds[dateStr].map(need => `
+                                        <tr>
+                                            <td style="width: 40%;">${need.shift_id}</td>
+                                            <td style="width: 20%;">${need.count}</td>
+                                            <td style="width: 40%;">
+                                                <button class="btn btn-info btn-sm edit-btn" data-date="${need.date_str}" data-shift="${need.shift_id}">Edit</button>
+                                                <button class="btn btn-danger btn-sm delete-btn" data-date="${need.date_str}" data-shift="${need.shift_id}">Delete</button>
+                                            </td>
+                                        </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            `;
+            needsContainer.insertAdjacentHTML('beforeend', cardHtml);
+        });
+    }
+
+    addNeedBtn.addEventListener('click', () => {
+        form.reset();
+        document.getElementById('needIndex').value = "-1"; // Indicate new entry
+        document.getElementById('needDate').readOnly = false;
+        document.getElementById('shiftId').readOnly = false;
+        modalLabel.textContent = 'Add New Need';
+    });
+
+    // Event delegation for edit/delete buttons on the dynamically created table rows
+    needsContainer.addEventListener('click', (event) => {
+        const target = event.target;
+        const dateStr = target.dataset.date;
+        const shiftId = target.dataset.shift;
+
+        if (!dateStr || !shiftId) return; // Not an edit/delete button
+
+        const needIndex = originalNeedsData.findIndex(n => n.date_str === dateStr && n.shift_id === shiftId); // Search in original data
+        if (needIndex === -1) return; // Should not happen if data- attributes are correct
+
+        if (target.classList.contains('edit-btn')) {
+            const need = originalNeedsData[needIndex];
+            
+            document.getElementById('needIndex').value = needIndex;
+            document.getElementById('needDate').value = parseDateString(need.date_str);
+            document.getElementById('needDate').readOnly = true;
+            document.getElementById('shiftId').value = need.shift_id;
+            document.getElementById('shiftId').readOnly = true;
+            document.getElementById('needCount').value = need.count;
+            
+            modalLabel.textContent = 'Edit Need';
+            modal.modal('show');
+        }
+
+        if (target.classList.contains('delete-btn')) {
+            const need = originalNeedsData[needIndex];
+            if (confirm(`Are you sure you want to delete the need for ${need.shift_id} on ${need.date_str}?`)) {
+                originalNeedsData.splice(needIndex, 1);
+                saveNeeds();
+            }
+        }
+    });
+
+    saveBtn.addEventListener('click', () => {
+        const index = document.getElementById('needIndex').value;
+        const dateInput = document.getElementById('needDate').value; // YYYY-MM-DD from input
+        const shift_id = document.getElementById('shiftId').value.trim();
+        const count = parseInt(document.getElementById('needCount').value);
+
+        if (!dateInput || !shift_id || isNaN(count)) {
+            alert('All fields are required.');
+            return;
+        }
+
+        // Convert YYYY-MM-DD back to D/M/YY for saving
+        const dateParts = dateInput.split('-');
+        const saveDateString = `${parseInt(dateParts[2])}/${parseInt(dateParts[1])}/${dateParts[0].substring(2)}`;
+
+        const newNeed = { date_str: saveDateString, shift_id, count };
+
+        if (index === "-1") { // Add new
+            if (originalNeedsData.some(n => n.date_str === saveDateString && n.shift_id === shift_id)) {
+                alert('A need for this shift on this date already exists. Please edit the existing one.');
+                return;
+            }
+            originalNeedsData.push(newNeed);
+        } else { // Update existing
+            // When editing, date_str and shift_id are readOnly, so we just update count
+            // However, the current logic for edit-btn sets needIndex to the actual index
+            // So we can directly update originalNeedsData[index]
+            originalNeedsData[index].count = newNeed.count;
+        }
+        
+        saveNeeds();
+    });
+
+    async function saveNeeds() {
+        await fetch('/api/daily_needs', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(originalNeedsData) // Send originalNeedsData (unfiltered)
+        });
+        modal.modal('hide');
+        fetchAndRenderNeeds(); // Re-fetch and re-render with current filter
+    }
+
+    fetchAndRenderNeeds();
+});
+</script>
+{% endblock %}

@@ -1,0 +1,546 @@
+{
+  "A10-GS": {
+    "id": "A10-GS",
+    "name": "A10-GS",
+    "start_time": "07:45",
+    "end_time": "15:15",
+    "duration_minutes": 450
+  },
+  "A20-GS": {
+    "id": "A20-GS",
+    "name": "A20-GS",
+    "start_time": "06:30",
+    "end_time": "14:40",
+    "duration_minutes": 490
+  },
+  "A21-GS": {
+    "id": "A21-GS",
+    "name": "A21-GS",
+    "start_time": "06:30",
+    "end_time": "11:20",
+    "duration_minutes": 290
+  },
+  "A21L-GS": {
+    "id": "A21L-GS",
+    "name": "A21L-GS",
+    "start_time": "06:30",
+    "end_time": "15:10",
+    "duration_minutes": 520
+  },
+  "A30-GS": {
+    "id": "A30-GS",
+    "name": "A30-GS",
+    "start_time": "06:30",
+    "end_time": "14:25",
+    "duration_minutes": 475
+  },
+  "A31-GS": {
+    "id": "A31-GS",
+    "name": "A31-GS",
+    "start_time": "06:30",
+    "end_time": "14:00",
+    "duration_minutes": 450
+  },
+  "A32-GS": {
+    "id": "A32-GS",
+    "name": "A32-GS",
+    "start_time": "06:30",
+    "end_time": "11:40",
+    "duration_minutes": 310
+  },
+  "A32L-GS": {
+    "id": "A32L-GS",
+    "name": "A32L-GS",
+    "start_time": "06:30",
+    "end_time": "15:10",
+    "duration_minutes": 520
+  },
+  "A40-GS": {
+    "id": "A40-GS",
+    "name": "A40-GS",
+    "start_time": "07:45",
+    "end_time": "13:15",
+    "duration_minutes": 330
+  },
+  "A50-GS": {
+    "id": "A50-GS",
+    "name": "A50-GS",
+    "start_time": "12:30",
+    "end_time": "20:55",
+    "duration_minutes": 505
+  },
+  "A50L-GS": {
+    "id": "A50L-GS",
+    "name": "A50L-GS",
+    "start_time": "11:30",
+    "end_time": "20:55",
+    "duration_minutes": 565
+  },
+  "A50L1-GS": {
+    "id": "A50L1-GS",
+    "name": "A50L1-GS",
+    "start_time": "10:00",
+    "end_time": "20:55",
+    "duration_minutes": 655
+  },
+  "A50L2-GS": {
+    "id": "A50L2-GS",
+    "name": "A50L2-GS",
+    "start_time": "09:00",
+    "end_time": "20:55",
+    "duration_minutes": 715
+  },
+  "BR1-GS": {
+    "id": "BR1-GS",
+    "name": "BR1-GS",
+    "start_time": "05:55",
+    "end_time": "15:00",
+    "duration_minutes": 545
+  },
+  "BR2-GS": {
+    "id": "BR2-GS",
+    "name": "BR2-GS",
+    "start_time": "06:25",
+    "end_time": "11:20",
+    "duration_minutes": 295
+  },
+  "BR2G-GS": {
+    "id": "BR2G-GS",
+    "name": "BR2G-GS",
+    "start_time": "06:25",
+    "end_time": "15:15",
+    "duration_minutes": 530
+  },
+  "BR2L-GS": {
+    "id": "BR2L-GS",
+    "name": "BR2L-GS",
+    "start_time": "06:25",
+    "end_time": "12:45",
+    "duration_minutes": 380
+  },
+  "BR2S-GS": {
+    "id": "BR2S-GS",
+    "name": "BR2S-GS",
+    "start_time": "06:25",
+    "end_time": "14:25",
+    "duration_minutes": 480
+  },
+  "C10-GS": {
+    "id": "C10-GS",
+    "name": "C10-GS",
+    "start_time": "06:15",
+    "end_time": "11:30",
+    "duration_minutes": 315
+  },
+  "C10L-GS": {
+    "id": "C10L-GS",
+    "name": "C10L-GS",
+    "start_time": "06:15",
+    "end_time": "12:45",
+    "duration_minutes": 390
+  },
+  "C20-GS": {
+    "id": "C20-GS",
+    "name": "C20-GS",
+    "start_time": "08:30",
+    "end_time": "14:00",
+    "duration_minutes": 330
+  },
+  "C21-GS": {
+    "id": "C21-GS",
+    "name": "C21-GS",
+    "start_time": "08:30",
+    "end_time": "13:00",
+    "duration_minutes": 270
+  },
+  "C30-GS": {
+    "id": "C30-GS",
+    "name": "C30-GS",
+    "start_time": "06:15",
+    "end_time": "14:00",
+    "duration_minutes": 465
+  },
+  "CAR1-GS": {
+    "id": "CAR1-GS",
+    "name": "CAR1-GS",
+    "start_time": "08:00",
+    "end_time": "18:00",
+    "duration_minutes": 600
+  },
+  "CAR2-GS": {
+    "id": "CAR2-GS",
+    "name": "CAR2-GS",
+    "start_time": "08:00",
+    "end_time": "18:00",
+    "duration_minutes": 600
+  },
+  "D10-GS": {
+    "id": "D10-GS",
+    "name": "D10-GS",
+    "start_time": "06:25",
+    "end_time": "12:55",
+    "duration_minutes": 390
+  },
+  "D10K-GS": {
+    "id": "D10K-GS",
+    "name": "D10K-GS",
+    "start_time": "06:25",
+    "end_time": "14:00",
+    "duration_minutes": 455
+  },
+  "D20-GS": {
+    "id": "D20-GS",
+    "name": "D20-GS",
+    "start_time": "13:00",
+    "end_time": "20:50",
+    "duration_minutes": 470
+  },
+  "D21-GS": {
+    "id": "D21-GS",
+    "name": "D21-GS",
+    "start_time": "14:50",
+    "end_time": "20:50",
+    "duration_minutes": 360
+  },
+  "ES1-GS": {
+    "id": "ES1-GS",
+    "name": "ES1-GS",
+    "start_time": "10:30",
+    "end_time": "21:30",
+    "duration_minutes": 660
+  },
+  "ES2-GS": {
+    "id": "ES2-GS",
+    "name": "ES2-GS",
+    "start_time": "13:15",
+    "end_time": "20:30",
+    "duration_minutes": 435
+  },
+  "ES3-GS": {
+    "id": "ES3-GS",
+    "name": "ES3-GS",
+    "start_time": "09:00",
+    "end_time": "17:00",
+    "duration_minutes": 480
+  },
+  "LCI-GS": {
+    "id": "LCI-GS",
+    "name": "LCI-GS",
+    "start_time": "05:30",
+    "end_time": "12:00",
+    "duration_minutes": 390
+  },
+  "LSB-GS": {
+    "id": "LSB-GS",
+    "name": "LSB-GS",
+    "start_time": "10:55",
+    "end_time": "21:00",
+    "duration_minutes": 605
+  },
+  "LSB1-GS": {
+    "id": "LSB1-GS",
+    "name": "LSB1-GS",
+    "start_time": "10:30",
+    "end_time": "21:00",
+    "duration_minutes": 630
+  },
+  "LSB2-GS": {
+    "id": "LSB2-GS",
+    "name": "LSB2-GS",
+    "start_time": "10:10",
+    "end_time": "20:20",
+    "duration_minutes": 610
+  },
+  "LSB3-GS": {
+    "id": "LSB3-GS",
+    "name": "LSB3-GS",
+    "start_time": "10:30",
+    "end_time": "16:20",
+    "duration_minutes": 350
+  },
+  "LSB4-GS": {
+    "id": "LSB4-GS",
+    "name": "LSB4-GS",
+    "start_time": "09:00",
+    "end_time": "12:20",
+    "duration_minutes": 200
+  },
+  "LSD-GS": {
+    "id": "LSD-GS",
+    "name": "LSD-GS",
+    "start_time": "10:55",
+    "end_time": "21:00",
+    "duration_minutes": 605
+  },
+  "LSD1-GS": {
+    "id": "LSD1-GS",
+    "name": "LSD1-GS",
+    "start_time": "10:30",
+    "end_time": "21:00",
+    "duration_minutes": 630
+  },
+  "LSD2-GS": {
+    "id": "LSD2-GS",
+    "name": "LSD2-GS",
+    "start_time": "10:10",
+    "end_time": "20:20",
+    "duration_minutes": 610
+  },
+  "LSD3-GS": {
+    "id": "LSD3-GS",
+    "name": "LSD3-GS",
+    "start_time": "10:30",
+    "end_time": "16:20",
+    "duration_minutes": 350
+  },
+  "LSD4-GS": {
+    "id": "LSD4-GS",
+    "name": "LSD4-GS",
+    "start_time": "09:00",
+    "end_time": "12:20",
+    "duration_minutes": 200
+  },
+  "LUA-GS": {
+    "id": "LUA-GS",
+    "name": "LUA-GS",
+    "start_time": "05:30",
+    "end_time": "12:00",
+    "duration_minutes": 390
+  },
+  "POS-GS": {
+    "id": "POS-GS",
+    "name": "POS-GS",
+    "start_time": "05:45",
+    "end_time": "10:30",
+    "duration_minutes": 285
+  },
+  "POSC-GS": {
+    "id": "POSC-GS",
+    "name": "POSC-GS",
+    "start_time": "05:45",
+    "end_time": "17:45",
+    "duration_minutes": 720
+  },
+  "SV-GS": {
+    "id": "SV-GS",
+    "name": "SV-GS",
+    "start_time": "08:00",
+    "end_time": "17:24",
+    "duration_minutes": 564
+  },
+  "VAL1-GS": {
+    "id": "VAL1-GS",
+    "name": "VAL1-GS",
+    "start_time": "10:30",
+    "end_time": "19:30",
+    "duration_minutes": 540
+  },
+  "VAL2-GS": {
+    "id": "VAL2-GS",
+    "name": "VAL2-GS",
+    "start_time": "13:00",
+    "end_time": "20:00",
+    "duration_minutes": 420
+  },
+  "Z10L-GS": {
+    "id": "Z10L-GS",
+    "name": "Z10L-GS",
+    "start_time": "05:30",
+    "end_time": "11:40",
+    "duration_minutes": 370
+  },
+  "Z10LS-GS": {
+    "id": "Z10LS-GS",
+    "name": "Z10LS-GS",
+    "start_time": "05:30",
+    "end_time": "12:20",
+    "duration_minutes": 410
+  },
+  "Z10LS2-GS": {
+    "id": "Z10LS2-GS",
+    "name": "Z10LS2-GS",
+    "start_time": "05:30",
+    "end_time": "12:50",
+    "duration_minutes": 440
+  },
+  "Z20-GS": {
+    "id": "Z20-GS",
+    "name": "Z20-GS",
+    "start_time": "06:00",
+    "end_time": "11:40",
+    "duration_minutes": 340
+  },
+  "Z20D-GS": {
+    "id": "Z20D-GS",
+    "name": "Z20D-GS",
+    "start_time": "06:00",
+    "end_time": "12:55",
+    "duration_minutes": 415
+  },
+  "ZG1-GS": {
+    "id": "ZG1-GS",
+    "name": "ZG1-GS",
+    "start_time": "06:00",
+    "end_time": "11:50",
+    "duration_minutes": 350
+  },
+  "ZR1-GS": {
+    "id": "ZR1-GS",
+    "name": "ZR1-GS",
+    "start_time": "06:00",
+    "end_time": "11:20",
+    "duration_minutes": 320
+  },
+  "ZR1L-GS": {
+    "id": "ZR1L-GS",
+    "name": "ZR1L-GS",
+    "start_time": "06:00",
+    "end_time": "12:20",
+    "duration_minutes": 380
+  },
+  "ZR1L2-GS": {
+    "id": "ZR1L2-GS",
+    "name": "ZR1L2-GS",
+    "start_time": "06:00",
+    "end_time": "13:00",
+    "duration_minutes": 420
+  },
+  "ISA1-GS": {
+    "id": "ISA1-GS",
+    "name": "ISA1-GS",
+    "start_time": "05:00",
+    "end_time": "13:00",
+    "duration_minutes": 480
+  },
+  "ISA2-GS": {
+    "id": "ISA2-GS",
+    "name": "ISA2-GS",
+    "start_time": "13:00",
+    "end_time": "22:00",
+    "duration_minutes": 540
+  },
+  "G01-GS": {
+    "id": "G01-GS",
+    "name": "G01-GS",
+    "start_time": "04:00",
+    "end_time": "13:00",
+    "duration_minutes": 540
+  },
+  "G02-GS": {
+    "id": "G02-GS",
+    "name": "G02-GS",
+    "start_time": "08:00",
+    "end_time": "17:00",
+    "duration_minutes": 540
+  },
+  "G03-GS": {
+    "id": "G03-GS",
+    "name": "G03-GS",
+    "start_time": "14:00",
+    "end_time": "22:00",
+    "duration_minutes": 480
+  },
+  "C21G-GS": {
+    "id": "C21G-GS",
+    "name": "C21G-GS",
+    "start_time": "08:15",
+    "end_time": "15:15",
+    "duration_minutes": 420
+  },
+  "CAR3-GS": {
+    "id": "CAR3-GS",
+    "name": "CAR3-GS",
+    "start_time": "13:30",
+    "end_time": "18:00",
+    "duration_minutes": 270
+  },
+  "CAR3G-GS": {
+    "id": "CAR3G-GS",
+    "name": "CAR3G-GS",
+    "start_time": "13:30",
+    "end_time": "18:00",
+    "duration_minutes": 270
+  },
+  "Z10-GS": {
+    "id": "Z10-GS",
+    "name": "Z10-GS",
+    "start_time": "05:30",
+    "end_time": "11:40",
+    "duration_minutes": 370
+  },
+  "NLS-GS": {
+    "id": "NLS-GS",
+    "name": "NLS-GS",
+    "start_time": "08:00",
+    "end_time": "16:00",
+    "duration_minutes": 480
+  },
+  "NLS1-GS": {
+    "id": "NLS1-GS",
+    "name": "NLS1-GS",
+    "start_time": "08:00",
+    "end_time": "16:00",
+    "duration_minutes": 480
+  },
+  "G04-GS": {
+    "id": "G04-GS",
+    "name": "G04-GS",
+    "start_time": "11:00",
+    "end_time": "20:00",
+    "duration_minutes": 540
+  },
+    "ISA3-GS": {
+    "id": "ISA3-GS",
+    "name": "ISA3-GS",
+    "start_time": "10:00",
+    "end_time": "19:00",
+    "duration_minutes": 540
+  },
+
+    "T1B-GS": {
+    "id": "T1B-GS",
+    "name": "T1B-GS",
+    "start_time": "07:00",
+    "end_time": "12:30",
+    "duration_minutes": 540
+  },
+      "T1-GS": {
+    "id": "T1-GS",
+    "name": "T1-GS",
+    "start_time": "07:00",
+    "end_time": "17:00",
+    "duration_minutes": 540
+  },
+
+  "T2-GS": {
+    "id": "T2-GS",
+    "name": "T2-GS",
+    "start_time": "11:00",
+    "end_time": "20:00",
+    "duration_minutes": 540
+  },
+
+  "N40-GS": {
+    "id": "N40-GS",
+    "name": "N40-GS",
+    "start_time": "11:00",
+    "end_time": "20:00",
+    "duration_minutes": 540
+  },  
+
+    "N41-GS": {
+    "id": "N41-GS",
+    "name": "N41-GS",
+    "start_time": "11:00",
+    "end_time": "20:00",
+    "duration_minutes": 540
+  },
+ 
+    "N43-GS": {
+    "id": "N43-GS",
+    "name": "N43-GS",
+    "start_time": "11:00",
+    "end_time": "20:00",
+    "duration_minutes": 540
+  }
+}

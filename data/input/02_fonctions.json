@@ -1,0 +1,108 @@
+{
+  "functions": [
+    {
+      "id": "AVSEC-F",
+      "qualifications": [
+        "A10-GS", "A20-GS", "A21-GS", "A21L-GS", "A30-GS", "A31-GS", "A32-GS", "A32L-GS", "A40-GS", "A50-GS", "A50L-GS", "A50L1-GS",
+        "C10-GS", "C10L-GS", "C20-GS", "C21-GS", "C21G-GS", "C30-GS","LSB-GS", "LSB1-GS", "LSB2-GS", "LSB3-GS", "LSB4-GS","A50L2-GS"
+      ]
+    },
+    {
+      "id": "BEUA-F",
+      "qualifications": [
+        "BR1-GS", "BR2-GS", "BR2G-GS", "BR2S-GS", "BR2L-GS"
+      ]
+    },
+    {
+      "id": "XRAY-F",
+      "qualifications": [
+        "CAR1-GS", "VAL1-GS", "VAL2-GS"
+      ]
+    },
+    {
+      "id": "CARGO-F",
+      "qualifications": [
+        "CAR2-GS", "CAR3-GS", "CAR3G-GS"
+      ]
+    },
+    {
+      "id": "DRIVER-F",
+      "qualifications": [
+        "ES1-GS", "ES2-GS", "ES3-GS"
+      ]
+    },
+    {
+      "id": "UACKIN-F",
+      "qualifications": [
+        "D10-GS", "D10K-GS", "Z10-GS", "Z10L-GS", "Z10LS-GS", "Z10LS2-GS", "Z20-GS", "Z20D-GS"
+      ]
+    },
+    {
+      "id": "MAILXR-F",
+      "qualifications": [
+        "POS-GS", "POSC-GS"
+      ]
+    },
+    {
+      "id": "UAGC-F",
+      "qualifications": [
+        "ZG1-GS"
+      ]
+    },
+    {
+      "id": "UAGSR-F",
+      "qualifications": [
+        "ZR1-GS", "ZR1L-GS", "ZR1L2-GS"
+      ]
+    },
+    {
+      "id": "DOC-F",
+      "qualifications": [
+        "D20-GS", "D21-GS", "LSD-GS", "LSD1-GS", "LSD2-GS", "LSD3-GS", "LSD4-GS"
+      ]
+    },
+    {
+      "id": "UALA-F",
+      "qualifications": [
+        "LCI-GS", "LUA-GS"
+      ]
+    },
+    {
+      "id": "SV-F",
+      "qualifications": [
+        "SV-GS"
+      ]
+    },
+    {
+      "id": "SVD-F",
+      "qualifications": [
+        "NLS-GS", "NLS1-GS", "N40-GS", "N41-GS", "N43-GS"
+      ]
+    },
+    {
+      "id": "ISA-F",
+      "qualifications": [
+        "ISA1-GS",
+        "ISA2-GS",
+        "ISA3-GS"
+      ]
+    },
+    {
+      "id": "BS-F",
+      "qualifications": [
+        "G01-GS",
+        "G02-GS",
+        "G03-GS",
+        "G04-GS"
+      ]
+    },
+        {
+      "id": "JET-F",
+      "qualifications": [
+        "T1B-GS",
+        "T1-GS",
+        "T2-GS"
+      ]
+    }
+  ]
+}

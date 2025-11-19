@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+{% block title %}Manage Shifts{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Manage Shifts</h1>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#shiftModal" id="addShiftBtn">Add New Shift</button>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Duration (min)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="shiftsTableBody">
+            <!-- Shift data will be loaded here -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Shift Modal -->
+<div class="modal fade" id="shiftModal" tabindex="-1" role="dialog" aria-labelledby="shiftModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="shiftModalLabel">Add Shift</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="shiftForm">
+                    <div class="form-group">
+                        <label for="shiftId">Shift ID</label>
+                        <input type="text" class="form-control" id="shiftId" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="shiftName">Name</label>
+                        <input type="text" class="form-control" id="shiftName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="startTime">Start Time</label>
+                        <input type="time" class="form-control" id="startTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="endTime">End Time</label>
+                        <input type="time" class="form-control" id="endTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="durationMinutes">Duration (Minutes)</label>
+                        <input type="number" class="form-control" id="durationMinutes" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="saveShiftBtn">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tableBody = document.getElementById('shiftsTableBody');
+    const modal = $('#shiftModal');
+    const modalLabel = document.getElementById('shiftModalLabel');
+    const saveBtn = document.getElementById('saveShiftBtn');
+    const addShiftBtn = document.getElementById('addShiftBtn');
+    const form = document.getElementById('shiftForm');
+    
+    let shiftsData = {};
+
+    async function fetchAndRenderShifts() {
+        const response = await fetch('/api/shifts_master');
+        shiftsData = await response.json();
+        renderTable();
+    }
+
+    function renderTable() {
+        tableBody.innerHTML = '';
+        for (const shiftId in shiftsData) {
+            const shift = shiftsData[shiftId];
+            const row = tableBody.insertRow();
+            row.innerHTML = `
+                <td>${shift.id}</td>
+                <td>${shift.name}</td>
+                <td>${shift.start_time}</td>
+                <td>${shift.end_time}</td>
+                <td>${shift.duration_minutes}</td>
+                <td>
+                    <button class="btn btn-info btn-sm edit-btn" data-id="${shift.id}">Edit</button>
+                    <button class="btn btn-danger btn-sm delete-btn" data-id="${shift.id}">Delete</button>
+                </td>
+            `;
+        }
+    }
+
+    addShiftBtn.addEventListener('click', () => {
+        form.reset();
+        document.getElementById('shiftId').readOnly = false;
+        modalLabel.textContent = 'Add New Shift';
+    });
+
+    tableBody.addEventListener('click', (event) => {
+        const shiftId = event.target.dataset.id;
+        if (!shiftId) return;
+
+        if (event.target.classList.contains('edit-btn')) {
+            const shift = shiftsData[shiftId];
+            
+            document.getElementById('shiftId').value = shift.id;
+            document.getElementById('shiftId').readOnly = true;
+            document.getElementById('shiftName').value = shift.name;
+            document.getElementById('startTime').value = shift.start_time;
+            document.getElementById('endTime').value = shift.end_time;
+            document.getElementById('durationMinutes').value = shift.duration_minutes;
+            
+            modalLabel.textContent = 'Edit Shift';
+            modal.modal('show');
+        }
+
+        if (event.target.classList.contains('delete-btn')) {
+            if (confirm(`Are you sure you want to delete shift ${shiftId}?`)) {
+                delete shiftsData[shiftId];
+                saveShifts();
+            }
+        }
+    });
+
+    saveBtn.addEventListener('click', () => {
+        const id = document.getElementById('shiftId').value.trim();
+        const name = document.getElementById('shiftName').value.trim();
+        const start_time = document.getElementById('startTime').value;
+        const end_time = document.getElementById('endTime').value;
+        const duration_minutes = parseInt(document.getElementById('durationMinutes').value);
+
+        if (!id || !name || !start_time || !end_time || isNaN(duration_minutes)) {
+            alert('All fields are required.');
+            return;
+        }
+
+        shiftsData[id] = { id, name, start_time, end_time, duration_minutes };
+        saveShifts();
+    });
+
+    async function saveShifts() {
+        await fetch('/api/shifts_master', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(shiftsData)
+        });
+        modal.modal('hide');
+        fetchAndRenderShifts();
+    }
+
+    fetchAndRenderShifts();
+});
+</script>
+{% endblock %}

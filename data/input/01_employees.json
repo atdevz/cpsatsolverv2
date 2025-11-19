@@ -1,0 +1,734 @@
+[
+  {
+    "id": "E001",
+    "name": "Younes Benhamou",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E002",
+    "name": "Yasmine Bounnaceur",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E003",
+    "name": "Nadine Delacoste",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E004",
+    "name": "Raoul Ebelle",
+    "qualifications": [
+      "AVSEC-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E005",
+    "name": "Khady Gueyebassoum",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E006",
+    "name": "Boubacar Kaba",
+    "qualifications": [
+      "AVSEC-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E007",
+    "name": "Sylvain Labarthe",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E008",
+    "name": "Mohamed Rmili",
+    "qualifications": [
+      "AVSEC-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E010",
+    "name": "Ilyass Aithroch",
+    "qualifications": [
+      "UALA-F",
+      "UAGC-F"
+    ],
+    "constraints": ["VACATION(2025-12-12,2025-12-15)"]
+  },
+  {
+    "id": "E011",
+    "name": "Ayoub Akroh",
+    "qualifications": [
+      "SV-F",
+      "UALA-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E012",
+    "name": "Sofyane Attil",
+    "qualifications": [
+      "UACKIN-F",
+      "UAGC-F",
+      "UAGSR-F"
+    ],
+    "constraints": [
+
+    ]
+  },
+  {
+    "id": "E013",
+    "name": "Gloria Ayena",
+    "qualifications": [
+      "UACKIN-F",
+      "UAGC-F",
+      "UAGSR-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E015",
+    "name": "Sophian Bandadi",
+    "qualifications": [
+      "UALA-F",
+      "UAGC-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E016",
+    "name": "Tayeb Belkadi",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F",
+      "BS-F"
+    ],
+    "constraints": ["VACATION(2025-12-01,2025-12-08)"]
+  },
+{
+    "id": "E018",
+    "name": "Sabrina Bonvin",
+    "qualifications": ["UACKIN-F","UAGSR-F"],
+    "constraints": [
+      "FIXED_OFF(Monday)",
+      "FIXED_OFF(Tuesday)",
+      "FIXED_OFF(Wednesday)",
+      "FIXED_OFF(Thursday)",
+      "FIXED_OFF(Friday)"
+    ]
+  },
+  {
+    "id": "E019",
+    "name": "Rattapat Boonekpongbillens",
+    "qualifications": [
+      "DRIVER-F"
+    ],
+    "constraints": ["VACATION(2025-12-01,2025-12-02)","VACATION(2025-12-22,2025-12-24)"]
+  },
+  {
+    "id": "E020",
+    "name": "Amin Brame",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F",
+      "DRIVER-F",
+      {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "DRIVER-F",
+        "value": 3
+       }
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E022",
+    "name": "Ridwan Chakor",
+    "qualifications": [
+      "DRIVER-F",
+      "AVSEC-F",
+      {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "AVSEC-F",
+        "value": 6
+       }
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E023",
+    "name": "Moriam Eity",
+    "qualifications": [
+      "UACKIN-F"
+    ],
+    "constraints": ["VACATION(2025-12-13,2025-12-31)"]
+  },
+  {
+    "id": "E024",
+    "name": "Haitem Elblidi",
+    "qualifications": [
+      "UALA-F",
+      "BS-F",
+      "JET-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E026",
+    "name": "Diouf Fara",
+    "qualifications": [
+      "CARGO-F",
+      "MAILXR-F"
+    ],
+    "constraints": ["VACATION(2025-12-24,2025-12-31)"]
+  },
+  {
+    "id": "E028",
+    "name": "Dave Fleurinor",
+    "qualifications": [
+      "BEUA-F",
+      "AVSEC-F"
+    ],
+    "constraints": [
+      {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "AVSEC-F",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": "E029",
+    "name": "Angelique Fontaine",
+    "qualifications": [
+      "UACKIN-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E030",
+    "name": "Mallory Ginel",
+    "qualifications": [
+      "UACKIN-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E031",
+    "name": "Ogue Gnahoredutil",
+    "qualifications": [
+      "ISA-F",
+      "AVSEC-F",
+      
+       {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "AVSEC-F",
+        "value": 6
+       }
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E032",
+    "name": "Sylla Haoussou",
+    "qualifications": [
+      "UACKIN-F",
+      "BEUA-F",
+      "JET-F"
+    ],
+    "constraints": [
+      {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "AVSEC-F",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": "E033",
+    "name": "Robson Ignacio",
+    "qualifications": [
+      "CARGO-F",
+      {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "CARGO-F",
+        "value": 12
+       } 
+    ],
+    "constraints": ["NOT_WEEKEND", "VACATION(2025-12-20,2025-12-28)"]
+  },
+  {
+    "id": "E034",
+    "name": "Rahim Fraioui",
+    "qualifications": [
+      "ISA-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E036",
+    "name": "Eric Busson",
+    "qualifications": [
+      "ISA-F"
+    ],
+    "constraints": ["VACATION(2025-12-20,2025-12-30)"]
+  },
+  {
+    "id": "E038",
+    "name": "Abdulkarim Karwan",
+    "qualifications": [
+      "ISA-F"
+    ],
+    "constraints": ["VACATION(2025-12-08,2025-12-14)"]
+  },
+  {
+    "id": "E039",
+    "name": "Abdelatif Jaouhari",
+    "qualifications": [
+      "UACKIN-F",
+      "BEUA-F",
+      {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "BEUA-F",
+        "value": 8
+       }
+    ],
+    "constraints": [
+      "VACATION(2025-12-29,2025-12-31)",
+      {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "AVSEC-F",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": "E040",
+    "name": "Nizar Jazi",
+    "qualifications": [
+      "UACKIN-F",
+      "SVD-F"
+    ],
+    "constraints": ["VACATION(2025-12-01,2025-12-08)"]
+  },
+  {
+    "id": "E041",
+    "name": "Neigma Lounis",
+    "qualifications": [
+      "BS-F"
+    ],
+    "constraints": []
+  },
+{
+    "id": "E042",
+    "name": "Alma Mueller",
+    "qualifications": ["ISA-F"],
+    "constraints": [
+      "HOLIDAY(2025-12-01)",
+      "HOLIDAY(2025-12-04)",
+      "HOLIDAY(2025-12-05)",
+      "HOLIDAY(2025-12-06)",
+      "HOLIDAY(2025-12-07)",
+      "HOLIDAY(2025-12-08)",
+      "HOLIDAY(2025-12-09)",
+      "HOLIDAY(2025-12-12)",
+      "HOLIDAY(2025-12-13)",
+      "HOLIDAY(2025-12-14)",
+      "HOLIDAY(2025-12-15)",
+      "HOLIDAY(2025-12-16)",
+      "HOLIDAY(2025-12-20)",
+      "HOLIDAY(2025-12-21)",
+      "HOLIDAY(2025-12-22)",
+      "HOLIDAY(2025-12-23)",
+      "HOLIDAY(2025-12-24)",
+      "HOLIDAY(2025-12-25)",
+      "HOLIDAY(2025-12-26)",
+      "HOLIDAY(2025-12-28)",
+      "HOLIDAY(2025-12-29)",
+      "HOLIDAY(2025-12-30)",
+      "HOLIDAY(2025-12-31)"
+    ]
+  },
+  {
+    "id": "E043",
+    "name": "Kunde Kashema",
+    "qualifications": [
+      "AVSEC-F"
+    ],
+    "constraints": ["VACATION(2025-12-18,2025-12-31)"]
+  },
+  {
+    "id": "E044",
+    "name": "Kouakou Kouassi",
+    "qualifications": [
+      "CARGO-F",
+      "XRAY-F"
+    ],
+    "constraints": ["VACATION(2025-12-16,2025-12-31)", "FIXED_OFF(Wednesday)", "FIXED_OFF(Saturday)"]
+  },
+  {
+    "id": "E045",
+    "name": "Damla Koyluk",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E047",
+    "name": "Elvedin Rexhepi",
+    "qualifications": [
+      "BS-F"
+    ],
+    "constraints": ["VACATION(2025-12-22,2025-12-31)"]
+  },
+  {
+    "id": "E048",
+    "name": "Abdelnasser Lamrani",
+    "qualifications": [
+      "UACKIN-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E050",
+    "name": "Nabile Majdoubi",
+    "qualifications": [
+      "CARGO-F",
+      "DOC-F",
+      "DRIVER-F",
+       {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "DOC-F",
+        "value": 4
+       }
+    ],
+    "constraints": ["VACATION(2025-12-16,2025-12-31)"]
+  },
+  {
+    "id": "E051",
+    "name": "Mamadou Doumbouya",
+    "qualifications": [
+      "UACKIN-F",
+      "AVSEC-F",
+      "BEUA-F"
+    ],
+    "constraints": [
+      {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "AVSEC-F",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": "E052",
+    "name": "Amadou Mbengue",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F"
+    ],
+    "constraints": ["FIXED_OFF(Monday)","FIXED_OFF(Tuesday)"]
+  },
+  {
+    "id": "E053",
+    "name": "Liliana Mendes Pereira",
+    "qualifications": [
+      "UACKIN-F",
+      "UAGC-F",
+      "UAGSR-F",
+      "JET-F"
+    ],
+    "constraints": ["VACATION(2025-12-23,2025-12-28)"]
+  },
+  {
+    "id": "E054",
+    "name": "Karim Meslem",
+    "qualifications": [
+      "XRAY-F",
+      "MAILXR-F",
+      "CARGO-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E055",
+    "name": "Rida Mizhar",
+    "qualifications": [
+      "BEUA-F",
+      "SVD-F"
+
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E056",
+    "name": "Nawal Moujouh",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E057",
+    "name": "Rachid Ouabaid",
+    "qualifications": [
+      "XRAY-F",
+      "CARGO-F"
+    ],
+    "constraints": ["NOT_WEEKEND"]
+  },
+  {
+    "id": "E058",
+    "name": "Hassana Ouatalab",
+    "qualifications": [
+      "UALA-F",
+      "UAGC-F",
+      "SVD-F",
+       {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "SVD-F",
+        "value": 5
+       }
+
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E059",
+    "name": "Lili Ouerghi",
+    "qualifications": [
+      "UALA-F",
+      "UAGC-F",
+      "UAGSR-F",
+       {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "UAGSR-F",
+        "value": 3
+       }
+
+    ],
+    "constraints": ["VACATION(2025-12-10,2025-12-14)", "HOLIDAY(2025-12-18)", "HOLIDAY(2025-12-19)"]
+  },
+  {
+    "id": "E060",
+    "name": "Samira Oussibel",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F"
+    ],
+    "constraints": ["VACATION(2025-12-01,2025-12-31)"]
+  },
+  {
+    "id": "E061",
+    "name": "Michelangelo Pino",
+    "qualifications": [
+      "XRAY-F",
+      "CARGO-F"
+    ],
+    "constraints": ["NOT_WEEKEND"]
+  },
+  {
+    "id": "E062",
+    "name": "Imran Qabbouche",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F",
+      "DRIVER-F",
+      {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "DRIVER-F",
+        "value": 3
+       }
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E064",
+    "name": "Mourad Said Soilihi",
+    "qualifications": [
+      "AVSEC-F",
+      "BEUA-F"
+    ],
+    "constraints": ["FIXED_OFF(Friday)","FIXED_OFF(Monday)","FIXED_OFF(Tuesday)","FIXED_OFF(Wednesday)","FIXED_OFF(Thursday)",
+      {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "AVSEC-F",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": "E065",
+    "name": "Mohamed-Ali Sedratti",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F"
+    ],
+    "constraints": ["VACATION(2025-12-01,2025-12-07)"]
+  },
+  {
+    "id": "E066",
+    "name": "Nadir Serhir",
+    "qualifications": [
+      "UAGC-F",
+      "UACKIN-F",
+      "JET-F",
+      {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "UACKIN-F",
+        "value": 6
+       }
+    ],
+    "constraints": ["VACATION(2025-12-22,2025-12-31)"]
+  },
+  {
+    "id": "E067",
+    "name": "Adama Traore",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F",
+      "DRIVER-F",
+      {
+        "type": "MAX_SHIFTS_PER_QUALIF",
+        "qualif": "DRIVER-F",
+        "value": 3
+       }
+    ],
+    "constraints": ["VACATION(2025-12-12,2025-12-15)"]
+  },
+  {
+    "id": "E068",
+    "name": "Kevin Uwaifo",
+    "qualifications": [
+      "AVSEC-F"
+    ],
+    "constraints": ["VACATION(2025-12-22,2025-12-31)"]
+  },
+  {
+    "id": "E070",
+    "name": "Amina Zebra",
+    "qualifications": [
+      "DRIVER-F"
+    ],
+    "constraints": ["NOT_WEEKEND"]
+  },
+  {
+    "id": "E071",
+    "name": "Elena Zolozetcaia",
+    "qualifications": [
+      "UAGSR-F",
+      "UAGC-F",
+      "UACKIN-F"
+    ],
+    "constraints": ["VACATION(2025-12-24,2025-12-31)"]
+  },
+  {
+    "id": "E073",
+    "name": "Imane Kharroubat",
+    "qualifications": [
+      "BS-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E074",
+    "name": "Soussoyves Bayaro",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F"
+    ],
+    "constraints": ["VACATION(2025-12-03,2025-12-17)"]
+  },
+  {
+    "id": "E075",
+    "name": "Charize Mendoza",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E076",
+    "name": "Hamza Elferjani",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F"
+    ],
+    "constraints": ["VACATION(2025-12-17,2025-12-27)"]
+  },
+  {
+    "id": "E077",
+    "name": "Ousseynou Diaw",
+    "qualifications": [
+      "BS-F"
+    ],
+    "constraints": ["VACATION(2025-12-20,2025-12-31)"]
+  },
+  {
+    "id": "E078",
+    "name": "Christian Theo",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F"
+    ],
+    "constraints": ["VACATION(2025-12-22,2025-12-31)"]
+  },
+  {
+    "id": "E079",
+    "name": "Nabil Berjali",
+    "qualifications": [
+      "BS-F"
+    ],
+    "constraints": []
+  },
+  {
+    "id": "E080",
+    "name": "Omer Fejza",
+    "qualifications": [
+      "AVSEC-F",
+      "DOC-F"
+    ],
+    "constraints": ["VACATION(2025-12-29,2025-12-31)", "FIXED_OFF(Monday)","FIXED_OFF(Tuesday)", "FIXED_OFF(Wednesday)","FIXED_OFF(Thursday)","FIXED_OFF(Friday)"]
+  },
+  {
+    "id": "E081",
+    "name": "Zakarria Zmany",
+    "qualifications": [
+      "SV-F"
+    ],
+    "constraints": ["VACATION(2025-12-27,2025-12-31)", "VACATION(2025-12-19,2025-12-21)"]
+  },
+    {
+    "id": "E082",
+    "name": "Viveros Valentina",
+    "qualifications": [
+      "UACKIN-F"
+    ],
+    "constraints": ["VACATION(2025-12-15,2025-12-31)"]
+  }
+]

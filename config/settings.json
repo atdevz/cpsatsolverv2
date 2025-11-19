@@ -1,0 +1,26 @@
+{
+  "penalties": {
+    "NO_WEEKEND_GUARANTEED": 5000,
+    "PENALTY_INTER_GROUP_FUNCTION_SHIFT_EQUITY_GAP": 1000,
+    "PENALTY_INTRA_GROUP_SHIFT_EQUITY_GAP": 500,
+    "PENALTY_INTRA_GROUP_WORK_DAYS_EQUITY_GAP": 50,
+    "PER_CONSECUTIVE_WORK_DAY_VIOLATION": 2000,
+    "PER_DAY_OFF_MISSING": 1500,
+    "PER_MISSING_NEED_UNIT": 10000,
+    
+    "PENALTY_ISOLATED_DAY_OFF": 1000
+  },
+  "solver_time_limit_seconds":120,
+  "min_off_days_per_month": 8,
+  "max_consecutive_work_days": 6,
+  "min_rest_hours": 11,
+  "guaranteed_weekend_off": 1,
+  "specific_agent_rules": [
+    {
+      "description": "Minimum 3 shifts DRIVER-F pour Qabbouche, Brame, Traore et E050",
+      "agent_ids": ["E062", "E020", "E067", "E050"],
+      "target_function": "DRIVER-F",
+      "min_count": 3
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+    "typescript.tsserver.web.projectWideIntellisense.suppressSemanticErrors": false,
+    "editor.inlineSuggest.experimental.emptyResponseInformation": false
+}

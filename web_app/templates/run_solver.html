@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Run Solver{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1>Run Solver</h1>
+    <button id="runSolverBtn" class="btn btn-primary mb-3">Run Solver</button>
+    <div class="card">
+        <div class="card-header">Solver Output</div>
+        <div class="card-body">
+            <pre id="solverOutput" style="white-space: pre-wrap; max-height: 400px; overflow-y: auto; background-color: #f0f0f0; padding: 10px; border: 1px solid #ccc;">Click 'Run Solver' to start the process...</pre>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const runSolverBtn = document.getElementById('runSolverBtn');
+    const solverOutput = document.getElementById('solverOutput');
+
+    runSolverBtn.addEventListener('click', () => {
+        solverOutput.textContent = 'Running solver... Please wait.\n';
+        runSolverBtn.disabled = true;
+
+        const eventSource = new EventSource('/api/run_solver');
+
+        eventSource.onmessage = function(event) {
+            solverOutput.textContent += event.data + '\n';
+            solverOutput.scrollTop = solverOutput.scrollHeight; // Auto-scroll to bottom
+        };
+
+        eventSource.onerror = function(err) {
+            console.error("EventSource failed:", err);
+            solverOutput.textContent += '\nError: Failed to connect to solver stream or stream ended unexpectedly.\n';
+            runSolverBtn.disabled = false;
+            eventSource.close();
+        };
+
+        // Optional: Listen for a specific 'end' event from the server if you want more control
+        // eventSource.addEventListener('end', function(event) {
+        //     runSolverBtn.disabled = false;
+        //     eventSource.close();
+        // });
+    });
+});
+</script>
+{% endblock %}

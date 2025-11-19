@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+
+{% block title %}Manage Groups{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h1>Manage Groups</h1>
+
+        <div class="mb-4">
+            <h2>Add New Group</h2>
+            <form id="addGroupForm">
+                <div class="form-group">
+                    <label for="groupName">Group Name:</label>
+                    <input type="text" class="form-control" id="groupName" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Group</button>
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>All Employees</h2>
+                <ul id="allEmployeesList" class="list-group group-container">
+                    <!-- All employees will be loaded here by JavaScript -->
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <h2>Existing Groups</h2>
+                <div id="groupsContainer">
+                    <!-- Groups and their members will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const allEmployeesList = document.getElementById('allEmployeesList');
+            const groupsContainer = document.getElementById('groupsContainer');
+            const addGroupForm = document.getElementById('addGroupForm');
+
+            let allEmployees = [];
+            let currentGroups = {};
+
+            // Function to fetch all data and render
+            async function fetchDataAndRender() {
+                const employeesResponse = await fetch('/api/employees');
+                const employeesData = await employeesResponse.json();
+                allEmployees = employeesData.map(emp => ({ id: emp.id, name: emp.name }));
+
+                const groupsResponse = await fetch('/api/groups');
+                currentGroups = await groupsResponse.json();
+
+                renderEmployees();
+                renderGroups();
+            }
+
+            // Render all employees not in any group
+            function renderEmployees() {
+                allEmployeesList.innerHTML = '';
+                const employeesInGroups = new Set();
+                for (const groupName in currentGroups) {
+                    currentGroups[groupName].forEach(empId => employeesInGroups.add(empId));
+                }
+
+                allEmployees.filter(emp => !employeesInGroups.has(emp.id)).forEach(emp => {
+                    const li = document.createElement('li');
+                    li.className = 'list-group-item employee-item';
+                    li.draggable = true;
+                    li.dataset.employeeId = emp.id;
+                    li.textContent = emp.name;
+                    allEmployeesList.appendChild(li);
+                });
+            }
+
+            // Render groups and their members
+            function renderGroups() {
+                groupsContainer.innerHTML = '';
+                for (const groupName in currentGroups) {
+                    const groupDiv = document.createElement('div');
+                    groupDiv.className = 'group-container';
+                    groupDiv.dataset.groupName = groupName;
+                    groupDiv.innerHTML = `
+                        <div class="group-header">
+                            <span class="group-name-display">${groupName}</span> 
+                            <button class="btn btn-sm edit-group-name" data-group="${groupName}">Edit</button>
+                            <button class="btn btn-danger btn-sm float-right delete-group" data-group="${groupName}">Delete Group</button>
+                        </div>
+                        <ul class="list-group group-members">
+                            ${currentGroups[groupName].map(empId => {
+                                const employee = allEmployees.find(e => e.id === empId);
+                                return employee ? `<li class="list-group-item employee-item" draggable="true" data-employee-id="${empId}">${employee.name}</li>` : '';
+                            }).join('')}
+                        </ul>
+                    `;
+                    groupsContainer.appendChild(groupDiv);
+                }
+            }
+
+            // Save groups data to backend
+            async function saveGroups() {
+                await fetch('/api/groups', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(currentGroups)
+                });
+            }
+
+            // Add new group
+            addGroupForm.addEventListener('submit', async function(event) {
+                event.preventDefault();
+                const groupName = document.getElementById('groupName').value.trim();
+                if (groupName && !currentGroups[groupName]) {
+                    currentGroups[groupName] = [];
+                    await saveGroups();
+                    addGroupForm.reset();
+                    fetchDataAndRender();
+                } else if (currentGroups[groupName]) {
+                    alert('Group already exists!');
+                }
+            });
+
+            // Delete group and inline rename/edit
+            groupsContainer.addEventListener('click', async function(event) {
+                const target = event.target;
+
+                if (target.classList.contains('delete-group')) {
+                    const groupToDelete = target.dataset.group;
+                    if (confirm(`Are you sure you want to delete group "${groupToDelete}"?`)) {
+                        delete currentGroups[groupToDelete];
+                        await saveGroups();
+                        fetchDataAndRender();
+                    }
+                } else if (target.classList.contains('edit-group-name')) {
+                    const groupDiv = target.closest('.group-container');
+                    const groupNameSpan = groupDiv.querySelector('.group-name-display');
+                    const oldGroupName = groupNameSpan.textContent;
+
+                    const input = document.createElement('input');
+                    input.type = 'text';
+                    input.className = 'form-control form-control-sm d-inline-block w-auto';
+                    input.value = oldGroupName;
+
+                    groupNameSpan.replaceWith(input);
+                    input.focus();
+
+                    const saveRename = async () => {
+                        const newGroupName = input.value.trim();
+                        if (newGroupName && newGroupName !== oldGroupName) {
+                            if (currentGroups[newGroupName]) {
+                                alert('A group with this name already exists.');
+                                input.replaceWith(groupNameSpan); // Revert if name exists
+                                return;
+                            }
+                            currentGroups[newGroupName] = currentGroups[oldGroupName];
+                            delete currentGroups[oldGroupName];
+                            await saveGroups();
+                            fetchDataAndRender();
+                        } else {
+                            input.replaceWith(groupNameSpan); // Revert if no change or empty
+                        }
+                    };
+
+                    input.addEventListener('blur', saveRename);
+                    input.addEventListener('keypress', function(e) {
+                        if (e.key === 'Enter') {
+                            input.blur(); // Trigger blur to save
+                        }
+                    });
+                }
+            });
+
+            // Drag and Drop functionality
+            let draggedItem = null;
+
+            document.addEventListener('dragstart', function(event) {
+                if (event.target.classList.contains('employee-item')) {
+                    draggedItem = event.target;
+                    event.dataTransfer.setData('text/plain', event.target.dataset.employeeId);
+                    event.target.classList.add('dragging');
+                }
+            });
+
+            document.addEventListener('dragend', function(event) {
+                if (event.target.classList.contains('employee-item')) {
+                    event.target.classList.remove('dragging');
+                    draggedItem = null;
+                }
+            });
+
+            document.addEventListener('dragover', function(event) {
+                event.preventDefault(); // Allow drop
+            });
+
+            document.addEventListener('drop', async function(event) {
+                event.preventDefault();
+                if (!draggedItem) return;
+
+                const employeeId = draggedItem.dataset.employeeId;
+                const target = event.target.closest('.group-container, #allEmployeesList');
+
+                if (target) {
+                    // Remove employee from old group
+                    for (const groupName in currentGroups) {
+                        currentGroups[groupName] = currentGroups[groupName].filter(id => id !== employeeId);
+                    }
+
+                    if (target.id === 'allEmployeesList') {
+                        // Dropped into "All Employees" (ungrouped)
+                        // Already removed from groups above, just save
+                    } else if (target.classList.contains('group-container')) {
+                        // Dropped into a specific group
+                        const groupName = target.dataset.groupName;
+                        if (!currentGroups[groupName].includes(employeeId)) {
+                            currentGroups[groupName].push(employeeId);
+                        }
+                    }
+                    await saveGroups();
+                    fetchDataAndRender();
+                }
+            });
+
+            fetchDataAndRender(); // Initial load
+        });
+    </script>
+{% endblock %}

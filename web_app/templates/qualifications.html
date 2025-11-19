@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+
+{% block title %}Manage Employees{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Manage Employees</h1>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#employeeModal" id="addEmployeeBtn">Add New Employee</button>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Qualifications</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="employeesTableBody">
+            <!-- Employee data will be loaded here -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Employee Modal -->
+<div class="modal fade" id="employeeModal" tabindex="-1" role="dialog" aria-labelledby="employeeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="employeeModalLabel">Add Employee</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="employeeForm">
+                    <input type="hidden" id="employeeIndex" value="-1">
+                    <div class="form-group">
+                        <label for="employeeId">Employee ID</label>
+                        <input type="text" class="form-control" id="employeeId" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeName">Name</label>
+                        <input type="text" class="form-control" id="employeeName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeQualifications">Qualifications (comma-separated)</label>
+                        <input type="text" class="form-control" id="employeeQualifications">
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeConstraints">Constraints (JSON format)</label>
+                        <textarea class="form-control" id="employeeConstraints" rows="3" placeholder='["VACATION(2025-12-01,2025-12-08)"]'></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="saveEmployeeBtn">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tableBody = document.getElementById('employeesTableBody');
+    const modal = $('#employeeModal');
+    const modalLabel = document.getElementById('employeeModalLabel');
+    const saveBtn = document.getElementById('saveEmployeeBtn');
+    const addEmployeeBtn = document.getElementById('addEmployeeBtn');
+    const form = document.getElementById('employeeForm');
+    
+    let employeesData = [];
+
+    async function fetchAndRenderEmployees() {
+        const response = await fetch('/api/employees');
+        employeesData = await response.json();
+        renderTable();
+    }
+
+    function renderTable() {
+        tableBody.innerHTML = '';
+        employeesData.forEach((emp, index) => {
+            const row = tableBody.insertRow();
+            row.innerHTML = `
+                <td>${emp.id}</td>
+                <td>${emp.name}</td>
+                <td>${Array.isArray(emp.qualifications) ? emp.qualifications.filter(q => typeof q === 'string').join(', ') : ''}</td>
+                <td>
+                    <button class="btn btn-info btn-sm edit-btn" data-index="${index}">Edit</button>
+                    <button class="btn btn-danger btn-sm delete-btn" data-id="${emp.id}">Delete</button>
+                </td>
+            `;
+        });
+    }
+
+    addEmployeeBtn.addEventListener('click', () => {
+        form.reset();
+        document.getElementById('employeeIndex').value = "-1";
+        document.getElementById('employeeId').readOnly = false;
+        modalLabel.textContent = 'Add New Employee';
+    });
+
+    tableBody.addEventListener('click', (event) => {
+        if (event.target.classList.contains('edit-btn')) {
+            const index = event.target.dataset.index;
+            const emp = employeesData[index];
+            
+            document.getElementById('employeeIndex').value = index;
+            document.getElementById('employeeId').value = emp.id;
+            document.getElementById('employeeId').readOnly = true;
+            document.getElementById('employeeName').value = emp.name;
+            document.getElementById('employeeQualifications').value = Array.isArray(emp.qualifications) ? emp.qualifications.filter(q => typeof q === 'string').join(', ') : '';
+            document.getElementById('employeeConstraints').value = JSON.stringify(emp.constraints || [], null, 2);
+            
+            modalLabel.textContent = 'Edit Employee';
+            modal.modal('show');
+        }
+
+        if (event.target.classList.contains('delete-btn')) {
+            const empId = event.target.dataset.id;
+            if (confirm(`Are you sure you want to delete employee ${empId}?`)) {
+                employeesData = employeesData.filter(emp => emp.id !== empId);
+                saveEmployees();
+            }
+        }
+    });
+
+    saveBtn.addEventListener('click', () => {
+        const index = document.getElementById('employeeIndex').value;
+        const id = document.getElementById('employeeId').value.trim();
+        const name = document.getElementById('employeeName').value.trim();
+        const qualificationsStr = document.getElementById('employeeQualifications').value.trim();
+        const constraintsStr = document.getElementById('employeeConstraints').value.trim();
+
+        if (!id || !name) {
+            alert('ID and Name are required.');
+            return;
+        }
+
+        let qualifications = qualificationsStr ? qualificationsStr.split(',').map(q => q.trim()) : [];
+        let constraints = [];
+        try {
+            constraints = constraintsStr ? JSON.parse(constraintsStr) : [];
+        } catch (e) {
+            alert('Invalid JSON format for constraints.');
+            return;
+        }
+
+        const newEmp = { id, name, qualifications, constraints };
+
+        if (index === "-1") { // Add new
+            if (employeesData.some(e => e.id === id)) {
+                alert('Employee with this ID already exists.');
+                return;
+            }
+            employeesData.push(newEmp);
+        } else { // Update existing
+            employeesData[index] = newEmp;
+        }
+        
+        saveEmployees();
+    });
+
+    async function saveEmployees() {
+        await fetch('/api/employees', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(employeesData)
+        });
+        modal.modal('hide');
+        fetchAndRenderEmployees();
+    }
+
+    fetchAndRenderEmployees();
+});
+</script>
+{% endblock %}
