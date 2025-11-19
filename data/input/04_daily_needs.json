@@ -3946,6 +3946,11 @@
     },
     {
         "date_str": "2025-12-26",
+        "shift_id": "POSC-GS",
+        "count": 1
+    },
+    {
+        "date_str": "2025-12-26",
         "shift_id": "ES1-GS",
         "count": 1
     },

@@ -549,7 +549,7 @@
       "XRAY-F",
       "CARGO-F"
     ],
-    "constraints": ["NOT_WEEKEND"]
+    "constraints": ["HOLIDAY(2025-12-01)","HOLIDAY(2025-12-02)","HOLIDAY(2025-12-04)","HOLIDAY(2025-12-06)","HOLIDAY(2025-12-08)","HOLIDAY(2025-12-09)","HOLIDAY(2025-12-16)"]
   },
   {
     "id": "E062",
