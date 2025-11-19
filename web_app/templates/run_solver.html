@@ -28,25 +28,31 @@ document.addEventListener('DOMContentLoaded', function() {
         const eventSource = new EventSource('/api/run_solver');
 
         eventSource.onmessage = function(event) {
+            // 1. Append the new data to the output window
             solverOutput.textContent += event.data + '\n';
             solverOutput.scrollTop = solverOutput.scrollHeight; // Auto-scroll to bottom
+
+            // 2. Check for specific "End of Process" messages from the server
+            // This allows us to close the connection manually before the server cuts it,
+            // preventing the browser from interpreting it as a network error.
+            if (event.data.includes("Le script du solveur a terminé avec succès") || 
+                event.data.includes("ERROR:")) {
+                console.log("Process finished. Closing stream.");
+                eventSource.close();
+                runSolverBtn.disabled = false;
+            }
         };
 
         eventSource.onerror = function(err) {
+            // This will now only fire on real network errors or unexpected crashes
             console.error("EventSource failed:", err);
-            solverOutput.textContent += '\nError: Failed to connect to solver stream or stream ended unexpectedly.\n';
+            solverOutput.textContent += '\nError: Connection lost or server error.\n';
             runSolverBtn.disabled = false;
             eventSource.close();
         };
-        
-        // Handle successful completion of the stream
+
         eventSource.onopen = function() {
             console.log("EventSource connected.");
-        };
-
-        eventSource.onclose = function() {
-            console.log("EventSource disconnected.");
-            runSolverBtn.disabled = false; // Re-enable button on stream close
         };
     });
 });

@@ -106,11 +106,15 @@ document.addEventListener('DOMContentLoaded', function() {
     dateFilter.addEventListener('change', applyFilter);
 
     function parseDateString(dateString) {
+        // Check if the dateString is already in YYYY-MM-DD format
+        if (dateString.match(/^\d{4}-\d{2}-\d{2}$/)) {
+            return dateString;
+        }
+        // If not, assume D/M/YY and convert to YYYY-MM-DD
         const parts = dateString.split('/');
-        // Assuming D/M/YY format, convert to YYYY-MM-DD
         const day = parts[0].padStart(2, '0');
         const month = parts[1].padStart(2, '0');
-        const year = `20${parts[2]}`; // Assuming 2-digit year is in 21st century
+        const year = `20${parts[2]}`; 
         return `${year}-${month}-${day}`;
     }
 

@@ -469,16 +469,7 @@
         "shift_id": "ISA2-GS",
         "count": 1
     },
-    {
-        "date_str": "2025-12-03",
-        "shift_id": "INSI",
-        "count": 1
-    },
-    {
-        "date_str": "2025-12-03",
-        "shift_id": "HOL",
-        "count": 1
-    },
+    
     {
         "date_str": "2025-12-04",
         "shift_id": "A10-GS",

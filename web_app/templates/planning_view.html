@@ -3,10 +3,210 @@
 {% block title %}{{ planning_type }} Planning{% endblock %}
 
 {% block content %}
-<div class="container mt-4">
-    <h1>{{ planning_type }} Planning</h1>
-    <div class="table-responsive">
-        {{ planning_content | safe }}
+<style>
+    /* --- Layout Global --- */
+    .container {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+    
+    .table-container {
+        max-height: 88vh;
+        overflow: auto;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        background: white;
+    }
+
+    /* --- Table --- */
+    .planning-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        table-layout: fixed;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .planning-table th, 
+    .planning-table td {
+        white-space: nowrap; 
+        text-align: center;
+        vertical-align: middle;
+        padding: 4px 2px;
+        font-size: 11px;
+        border-right: 1px solid #dee2e6;
+        border-bottom: 1px solid #dee2e6;
+        height: 32px;
+        overflow: hidden;
+        cursor: default;
+    }
+
+    /* --- En-têtes (Sticky Top) --- */
+    .planning-table thead th {
+        position: sticky;
+        top: 0;
+        background-color: #2c3e50; /* Bleu nuit */
+        color: white;
+        z-index: 10;
+        height: 40px;
+        font-weight: 600;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+
+    /* --- Colonne 1 : NOM (Maintenant la seule colonne figée à gauche) --- */
+    .planning-table td:nth-child(1), 
+    .planning-table th:nth-child(1) {
+        position: sticky;
+        left: 0;
+        background-color: #fff;
+        z-index: 20; /* Au-dessus du contenu scrollable */
+        width: 140px;      /* Un peu plus large pour compenser */
+        min-width: 140px;
+        max-width: 140px;
+        border-right: 2px solid #6c757d; /* Séparation marquée avant les dates */
+        font-weight: bold;
+        text-align: left;
+        padding-left: 10px;
+        color: #212529;
+        text-overflow: ellipsis;
+    }
+
+    /* Coin haut-gauche (Header Nom) */
+    .planning-table thead th:nth-child(1) {
+        z-index: 30;
+        background-color: #2c3e50;
+        color: white;
+    }
+
+    /* --- Colonnes de DATES (Toutes les autres colonnes) --- */
+    .planning-table th:not(:first-child),
+    .planning-table td:not(:first-child) {
+        width: 60px; 
+        max-width: 60px;
+        min-width: 60px;
+    }
+
+    /* --- Séparateur de Groupe Horizontal --- */
+    .group-header-row td {
+        background-color: #dbe4ea; /* Bleu-gris clair */
+        color: #2c3e50;
+        font-weight: 800;
+        font-size: 13px;
+        text-align: center; /* CENTRÉ */
+        padding: 5px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-top: 2px solid #adb5bd;
+        border-bottom: 1px solid #adb5bd;
+        position: sticky;
+        left: 0;
+        z-index: 5; /* Reste visible au scroll */
+    }
+
+    /* --- MISE EN SURBRILLANCE DE LA LIGNE (EMPLOYÉ) --- */
+    .planning-table tbody tr:hover td {
+        background-color: #fff3cd !important; /* Jaune pâle */
+        color: black !important;
+        border-top: 1px solid #856404;
+        border-bottom: 1px solid #856404;
+    }
+    /* On s'assure que la colonne figée (Nom) s'allume aussi */
+    .planning-table tbody tr:hover td:first-child {
+        background-color: #ffeeba !important;
+    }
+
+    /* --- STYLES DES CELLULES --- */
+    .weekend-col {
+        background-color: #e2e6ea; /* Gris moyen */
+        color: #212529;
+        font-weight: 500;
+    }
+    .weekend-header {
+        background-color: #495057 !important;
+        color: #ffc107 !important;
+    }
+
+    .cell-off {
+        background-color: #87CEEB !important; /* Bleu Ciel */
+        color: black !important;
+        font-weight: 700;
+    }
+    
+    .cell-holiday {
+        background-color: #90EE90 !important; /* Vert Clair */
+        color: #006400 !important;
+        font-weight: 700;
+    }
+</style>
+
+<div class="mt-2">
+    <div class="d-flex justify-content-between align-items-center mb-2 px-2">
+        <h2 class="h4 mb-0 text-dark">{{ planning_type }} Planning</h2>
+        <div>
+            <span class="badge badge-secondary mr-2">Week-end</span>
+            <span class="badge badge-info mr-2" style="background-color: #87CEEB; color:black;">OFF / Repos</span>
+            <span class="badge badge-success" style="background-color: #90EE90; color:black;">Congés (Holiday)</span>
+        </div>
     </div>
+
+    {% if grouped_data %}
+    <div class="table-container">
+        <table class="planning-table">
+            <thead>
+                <tr>
+                    <th>Employé</th>
+                    {% for d in dates_meta %}
+                        <th class="{{ 'weekend-header' if d.is_weekend else '' }}" title="{{ d.original_col }}">
+                            {{ d.short_name }}
+                        </th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for group_name, employees in grouped_data.items() %}
+                    <tr class="group-header-row">
+                        <td colspan="{{ dates_meta|length + 1 }}">
+                            {{ group_name }}
+                        </td>
+                    </tr>
+
+                    {% for emp in employees %}
+                        <tr>
+                            <td title="{% for key, val in emp.items() %}{% if key in ['Employee','Nom'] %}{{ val }}{% endif %}{% endfor %}">
+                                {% for key, val in emp.items() %}
+                                    {% if key in ['Employee', 'Employé', 'Nom', 'Name'] %} {{ val }} {% endif %}
+                                {% endfor %}
+                            </td>
+
+                            {% for d in dates_meta %}
+                                {% set shift = emp.get(d.original_col, '') %}
+                                <td class="{{ 'weekend-col' if d.is_weekend else '' }} 
+                                           {{ 'cell-off' if shift in ['OFF', 'FIXED_OFF'] else '' }}
+                                           {{ 'cell-holiday' if shift == 'HOLIDAY' else '' }}">
+                                    {{ shift }}
+                                </td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+        <div class="alert alert-warning m-4">
+            <strong>Aucune donnée !</strong> Le fichier de planning n'a pas été trouvé ou est vide. Veuillez lancer le solveur.
+        </div>
+    {% endif %}
 </div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("Planning view loaded.");
+});
+</script>
 {% endblock %}
