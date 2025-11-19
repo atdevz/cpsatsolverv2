@@ -524,11 +524,7 @@
         "shift_id": "CAR2-GS",
         "count": 1
     },
-    {
-        "date_str": "2025-12-04",
-        "shift_id": "CAR3-GS",
-        "count": 1
-    },
+
     {
         "date_str": "2025-12-04",
         "shift_id": "ES1-GS",
@@ -1429,11 +1425,7 @@
         "shift_id": "CAR2-GS",
         "count": 1
     },
-    {
-        "date_str": "2025-12-10",
-        "shift_id": "CAR3-GS",
-        "count": 1
-    },
+    
     {
         "date_str": "2025-12-10",
         "shift_id": "ES1-GS",
@@ -3494,11 +3486,7 @@
         "shift_id": "CAR2-GS",
         "count": 1
     },
-    {
-        "date_str": "2025-12-23",
-        "shift_id": "CAR3-GS",
-        "count": 1
-    },
+
     {
         "date_str": "2025-12-23",
         "shift_id": "ES1-GS",
@@ -3664,11 +3652,7 @@
         "shift_id": "CAR2-GS",
         "count": 1
     },
-    {
-        "date_str": "2025-12-24",
-        "shift_id": "CAR3-GS",
-        "count": 1
-    },
+
     {
         "date_str": "2025-12-24",
         "shift_id": "ES1-GS",
