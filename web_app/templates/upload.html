@@ -7,7 +7,7 @@
         <h1>Upload Data from Excel</h1>
 
         <div class="mb-4">
-            <h2>Upload Excel File</h2>
+            <h2>Upload Excel File (for Employees, Shifts, Daily Needs, etc.)</h2>
             <form id="uploadForm" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="excelFile">Choose Excel File:</label>
@@ -17,6 +17,21 @@
             </form>
             <div id="uploadMessage" class="mt-3"></div>
         </div>
+
+        <hr>
+
+        <div class="mb-4">
+            <h2>Upload Planning CSV (for Audit)</h2>
+            <form id="uploadPlanningCsvForm" enctype="multipart/form-data" action="{{ url_for('upload_planning_csv') }}" method="post">
+                <div class="form-group">
+                    <label for="planningCsvFile">Choose Planning CSV File (e.g., planning_brut.csv):</label>
+                    <input type="file" class="form-control-file" id="planningCsvFile" name="csv_file" accept=".csv" required>
+                </div>
+                <button type="submit" class="btn btn-success">Upload & Audit Planning</button>
+            </form>
+            {# Flash messages will be displayed by Flask #}
+        </div>
+
     </div>
 {% endblock %}
 

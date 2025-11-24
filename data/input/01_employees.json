@@ -352,7 +352,7 @@
       "HOLIDAY(2025-12-07)",
       "HOLIDAY(2025-12-08)",
       "HOLIDAY(2025-12-09)",
-      "HOLIDAY(2025-12-12)",
+      "HOLIDAY(2025-12-10)",
       "HOLIDAY(2025-12-13)",
       "HOLIDAY(2025-12-14)",
       "HOLIDAY(2025-12-15)",
@@ -730,5 +730,287 @@
       "UACKIN-F"
     ],
     "constraints": ["VACATION(2025-12-15,2025-12-31)"]
+  },
+  {
+    "id": "E083",
+    "name": "Dummy Employee 83",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E084",
+    "name": "Dummy Employee 84",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E085",
+    "name": "Dummy Employee 85",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E086",
+    "name": "Dummy Employee 86",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E087",
+    "name": "Dummy Employee 87",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E088",
+    "name": "Dummy Employee 88",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E089",
+    "name": "Dummy Employee 89",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E090",
+    "name": "Dummy Employee 90",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E091",
+    "name": "Dummy Employee 91",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E092",
+    "name": "Dummy Employee 92",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E093",
+    "name": "Dummy Employee 93",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E094",
+    "name": "Dummy Employee 94",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E095",
+    "name": "Dummy Employee 95",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E096",
+    "name": "Dummy Employee 96",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E097",
+    "name": "Dummy Employee 97",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E098",
+    "name": "Dummy Employee 98",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E099",
+    "name": "Dummy Employee 99",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E100",
+    "name": "Dummy Employee 100",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E101",
+    "name": "Dummy Employee 101",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E102",
+    "name": "Dummy Employee 102",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E103",
+    "name": "Dummy Employee 103",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E104",
+    "name": "Dummy Employee 104",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E105",
+    "name": "Dummy Employee 105",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E106",
+    "name": "Dummy Employee 106",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E107",
+    "name": "Dummy Employee 107",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E108",
+    "name": "Dummy Employee 108",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E109",
+    "name": "Dummy Employee 109",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E110",
+    "name": "Dummy Employee 110",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E111",
+    "name": "Dummy Employee 111",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E112",
+    "name": "Dummy Employee 112",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E113",
+    "name": "Dummy Employee 113",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E114",
+    "name": "Dummy Employee 114",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E115",
+    "name": "Dummy Employee 115",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E116",
+    "name": "Dummy Employee 116",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E117",
+    "name": "Dummy Employee 117",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E118",
+    "name": "Dummy Employee 118",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E119",
+    "name": "Dummy Employee 119",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E120",
+    "name": "Dummy Employee 120",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E121",
+    "name": "Dummy Employee 121",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E122",
+    "name": "Dummy Employee 122",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E123",
+    "name": "Dummy Employee 123",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E124",
+    "name": "Dummy Employee 124",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E125",
+    "name": "Dummy Employee 125",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E126",
+    "name": "Dummy Employee 126",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E127",
+    "name": "Dummy Employee 127",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E128",
+    "name": "Dummy Employee 128",
+    "qualifications": [],
+    "constraints": []
+  },
+  {
+    "id": "E129",
+    "name": "Dummy Employee 129",
+    "qualifications": [],
+    "constraints": []
   }
 ]

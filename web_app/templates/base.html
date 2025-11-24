@@ -22,7 +22,9 @@
                 
                 <li class="nav-item"><a class="nav-link" href="/run_solver">Run Solver</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('planning_report_page') }}">Report</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('planning_view_page', planning_type='final') }}">Planning</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('planning_view_page', planning_filename='Planning.csv') }}">Planning</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('planning_report_page') }}">Audited Report</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('planning_view_page', planning_filename='planning_audited.csv') }}">Audited Planning</a></li>
                 
                 {% if current_user.is_authenticated %}
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('logout') }}">Logout</a></li>
